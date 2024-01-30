@@ -7,6 +7,9 @@ int main(){
     cin>>k>>l>>m>>n;
     int total;
     cin>>total;
+    if(total==1){
+        cout<<"1";
+    }
     
     for(int i=0; i<total; i++){
         a[i]=i+1;
@@ -18,6 +21,9 @@ int main(){
         }
         
     }    
+    
+    if(total!=1){
    cout<<count;
+    }
     return 0;
 }
