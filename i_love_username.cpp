@@ -8,9 +8,18 @@ int first=a[0];
 int morecount=0,lesscount=0;
 for(int i=0; i<n ; i++){
     cin>>a[i];
-    cout<<a[i]<<endl;
 }
-for(int j=1 ; j<=n ; j++){
-    if(a[j]>a[0])
+for(int j=0 ; j<n ; j++){
+    for(int k=0; k<=j ; k++){
+    if(a[k]>a[k+1]){
+        lesscount++;
+    }
+    else if(a[k]<a[k+1]){
+        morecount++;
+    }
 }
+
+}
+cout<<morecount<<endl<<lesscount<<endl;
+return 0;
 }
