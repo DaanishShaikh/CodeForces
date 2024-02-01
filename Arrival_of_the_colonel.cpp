@@ -13,15 +13,15 @@ int main(){
     for(int j=0 ; j<n ; j++){
         if(arr[j]>max){
             max=arr[j];
+            x=j;
         }
-        x=j-1;
+          if(arr[j]<=min){
+            min=arr[j];
+            y=j;
+        }
+        
     }    
-    for(int k=0; k<n ; k++){
-        if(arr[k]<min){
-            min=arr[k];
-        }
-        y=k;
-    }
+    
     y=(n-1)-y;
     
     cout<<max<<endl;
