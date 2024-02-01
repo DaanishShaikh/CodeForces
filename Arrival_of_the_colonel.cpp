@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
+    int count=0;
     int n;
     cin>>n;
     int x,y;
@@ -26,6 +27,7 @@ int main(){
                     x=k;
                     break;
                 }
+
                 }
         for(int z=n-1 ; z>=0 ; z--){
                 if(arr[z]==min){
@@ -33,12 +35,20 @@ int main(){
                         break;
                     }
                 }
-        
+                if (x>y){
+                    count++;
+                }
+         y=(n-1)-y;
+        if(count==1){
+            cout<<x+y-1;
+        }
+        else{
+            cout<<x+y;
+        }
     
-    y=(n-1)-y;
-    cout<<x<<endl;
-    cout<<y<<endl;
-cout<<x+y;
+   
+    
+
     return 0;
     
 }
