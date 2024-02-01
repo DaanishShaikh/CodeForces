@@ -1,30 +1,25 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 int main(){
     int a[100];
     int count=0;
     int n;
     cin>>n;
-    int temp=n;
-    for(int i = 0; i<temp ; i++){
-        cin>>a[i];
-    }
-    for(int j=0 ; j<temp ; j++){
-        for (int k=1; k<=100; k++){
-            if(a[j]%k==0){
+    int temp;
+    temp=sqrt(n);
+    if(sqrt(n)*sqrt(n)==n){
+        for(int i=2; i<sqrt(n); i++){
+            if(sqrt(n)/i==0){
                 count++;
-                n=n/k;
-                
             }
         }
-        if(count==3){
-            
-        cout<<"YES"<<endl;
+        if(count==0){
+            cout<<n;
+        }
     }
-    else{
-        cout<<"NO"<<endl;
-    }
-    }
+    // root n should be is integer
+    // root n is prime
     
     return 0;
 }
