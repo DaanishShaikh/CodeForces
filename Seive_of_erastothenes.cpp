@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
+    int is_prime(int num){
     int n;
     cin>>n;
     int a[n];
@@ -19,5 +20,8 @@ int main(){
             cout<<z<<endl;
         }
     }
+    
+    }
+    is_prime(100);
     return 0;
 }

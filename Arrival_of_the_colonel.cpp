@@ -14,7 +14,7 @@ int main(){
         if(arr[j]>max){
             max=arr[j];
         }
-        x=j;
+        x=j-1;
     }    
     for(int k=0; k<n ; k++){
         if(arr[k]<min){
@@ -22,7 +22,7 @@ int main(){
         }
         y=k;
     }
-    y=4-y;
+    y=(n-1)-y;
     
     cout<<max<<endl;
     cout<<min<<endl;
