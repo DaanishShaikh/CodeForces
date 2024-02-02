@@ -1,7 +1,8 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int main(){
-    int a[100];
+    vector <int>a;
     int k,l,m,n;
     cin>>k>>l>>m>>n;
     int total;
