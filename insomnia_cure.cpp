@@ -2,14 +2,12 @@
 using namespace std;
 int main(){
     int a[100];
-    int count=0;
     int k,l,m,n;
     cin>>k>>l>>m>>n;
     int total;
     cin>>total;
-    if(total==1){
-        cout<<"1";
-    }
+    int count=0;
+   
     
     for(int i=0; i<total; i++){
         a[i]=i+1;
@@ -22,8 +20,8 @@ int main(){
         
     }    
     
-    if(total!=1){
+    
    cout<<count;
-    }
+    
     return 0;
 }
