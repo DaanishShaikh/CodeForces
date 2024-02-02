@@ -1,13 +1,13 @@
 #include<iostream>
-#include<vector>
 using namespace std;
 int main(){
-    vector <int>a;
     int k,l,m,n;
     cin>>k>>l>>m>>n;
     int total;
     cin>>total;
     int count=0;
+    int a[total];
+
    
     
     for(int i=0; i<total; i++){
