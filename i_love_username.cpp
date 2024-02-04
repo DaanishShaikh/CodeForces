@@ -1,25 +1,31 @@
 #include<iostream>
 using namespace std;
 int main(){
+
 int n;
 cin>>n;
-int a[100];
+int a[n];
 int first=a[0];
 int morecount=0,lesscount=0;
+
 for(int i=0; i<n ; i++){
     cin>>a[i];
 }
-for(int j=0 ; j<n ; j++){
-    for(int k=0; k<=j ; k++){
-    if(a[k]>a[k+1]){
+int max=a[0], min=a[0];
+for(int j=0 ; j<n-1 ; j++){
+    
+    if(min>a[j+1]){
+        min=a[j+1];
         lesscount++;
+        // cout<<"min="<<min<<endl;
     }
-    else if(a[k]<a[k+1]){
+    else if(max<a[j+1]){
+    max=a[j+1];
         morecount++;
+        // cout<<"max="<<max<<endl;
     }
-}
 
 }
-cout<<morecount<<endl<<lesscount<<endl;
+cout<<morecount+lesscount<<endl;
 return 0;
 }
