@@ -38,7 +38,6 @@ int main(){
         if(dif[k]>max){
             max=dif[k];
         }
-        // cout<<dif[k]<<endl;
     }
     cout<<max;
     return 0;
