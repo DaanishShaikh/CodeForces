@@ -15,12 +15,10 @@ int main(){
         if(j%2==0){
             sum=sum-a[j];
             dif[j]=sum;
-            // cout<<dif[j]<<endl;
         }
         else{
             sum=sum+a[j];
             dif[j]=sum;
-            // cout<<sum<<endl;
         }
     }
    max=dif[0];
