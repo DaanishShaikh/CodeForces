@@ -26,13 +26,6 @@ int main(){
         // cout<<endl<<dif[j];
         // cout<<dif<<endl<<difference[j];
     }
-    // difference[0]=max;
-    // for(int k=0 ; k<n ; k+=2){
-    //     if(difference[k]>max){
-    //         difference[k]=max;
-    //     }
-    // }
-    // cout<<max;
    max=dif[0];
     for(int k=0 ; k<n*2 ; k++){
         if(dif[k]>max){
