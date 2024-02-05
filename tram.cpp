@@ -22,9 +22,6 @@ int main(){
             dif[j]=sum;
             // cout<<sum<<endl;
         }
-        // dif[j]=a[j+1]-a[j];
-        // cout<<endl<<dif[j];
-        // cout<<dif<<endl<<difference[j];
     }
    max=dif[0];
     for(int k=0 ; k<n*2 ; k++){
