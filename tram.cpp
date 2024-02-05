@@ -9,7 +9,6 @@ int main(){
     int a[n*2];
     for(int i=0 ; i<n*2; i++){
         cin>>a[i];
-        // cout<<a[i];
     }
     for(int j=0 ; j<n*2 ; j++){
         if(j%2==0){
