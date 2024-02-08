@@ -29,7 +29,6 @@ int main(){
     int sumb=0;
     flag=false;
     for(int k=1, b=l-1 ; k<l-1, b>=0 ; k++,b--){
-    //    if( k==l||b==0){break;}
         if(b==k){
             continue;
         }
