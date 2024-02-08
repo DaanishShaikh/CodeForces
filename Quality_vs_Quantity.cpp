@@ -38,8 +38,7 @@ int main(){
         if(sumb>sumf){
             flag=true;
         }
-                // if(k==l){break;}
-
+                
     }
     // Assuming 'l' is the length of array 'a'
 
