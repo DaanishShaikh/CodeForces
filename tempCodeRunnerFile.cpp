@@ -1,1 +1,1 @@
-            // cout<<dif[j]<<endl;
+    //    if( k==l||b==0){break;}
