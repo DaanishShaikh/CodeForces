@@ -41,15 +41,6 @@ int main(){
                 
     }
     
-//     // Add bounds checking for array access
-//     if(b >= 0) {
-//         sumb += a[b];
-//     }
-    
-//     if(sumb > sumf) {
-//         flag = true;
-//     }
-// }
 
     if(flag==true){
         cout<<"YES"<<endl;
