@@ -24,9 +24,7 @@ int main(){
                 
             }
         }
-        // for(int w=0 ; w<l ; w++){
-        //     cout<<a[w];
-        // }
+        
         int sumf=a[0];
     int sumb=0;
     flag=false;
