@@ -40,18 +40,6 @@ int main(){
         }
                 
     }
-    // Assuming 'l' is the length of array 'a'
-
-// for(int k = 0, b = l - 1; k < l && b >= 0; k++, b--) {
-//     if(b == k) {
-//         continue;
-//     }
-    
-//     // Add bounds checking for array access
-//     if(k < l) {
-//         sumf += a[k];
-//         cout << sumf;
-//     }
     
 //     // Add bounds checking for array access
 //     if(b >= 0) {
