@@ -19,9 +19,6 @@ int main(){
                 }
             }
         }
-        for(int j=0 ; j<l ; j++){
-            cout<<a[j];
-        }
         bool flag=false;
         // for(int k=0 ; k<l ; k++){
         //     for(int m=0 ; m<l ; m++){
@@ -35,10 +32,7 @@ int main(){
                 
                 if(a[q]-a[q+1]>1||a[q]-a[q+1]<-1){
                     flag = true;
-                                        cout<<"a[k]="<<a[q]<<"a[m]="<<a[q+1]<<"dif="<<a[q]-a[q+1]<<endl<<q;
-
                 }
-                 cout<<"a[k]="<<a[q]<<"a[m]="<<a[q+1]<<"dif="<<a[q]-a[q+1]<<endl<<q;
                 if(flag){break;}
             }
         
