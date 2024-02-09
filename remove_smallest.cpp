@@ -20,14 +20,6 @@ int main(){
             }
         }
         bool flag=false;
-        // for(int k=0 ; k<l ; k++){
-        //     for(int m=0 ; m<l ; m++){
-        //         if(a[k]-a[m]>1||a[k]-a[m]<-1){
-                    // cout<<"a[k]="<<a[k]<<"a[m]="<<a[m]<<"dif="<<a[k]-a[m]<<endl<<m;
-        //            flag=true;
-        //            break;
-        //            }            
-        // }
          for(long long q=0 ; q<l-1 ; q++){
                 
                 if(a[q]-a[q+1]>1||a[q]-a[q+1]<-1){
