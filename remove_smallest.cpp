@@ -16,10 +16,11 @@ int main(){
                 if(a.size()==1){
                     break;
                 }
-                if(a[k]-a[m]==1||a[k]-a[m]==-1||a[k]-a[m]==0){
-                   a.erase(k);            
-                   a.erase(m);
-                       }
+                if(a[k]-a[m]>1){
+                   cout<<"NO";
+            }
+            else{
+                cout<<"YES";
             }
         }
         for(int j=0 ; j<l ; j++){
