@@ -1,47 +1,56 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int main(){
-        int t;
+        long long t;
     cin>>t;
     bool flag=false;
     
 
     for(int u=0 ; u<t ; u++){
-        int l;
+        long long l;
         cin>>l;
-        int a[l];
+        // int a[l];
+        vector<long long> a(l);
         for(int j=0 ; j<l ; j++){
             cin>>a[j];
         }
         for(int i=0 ; i<l ; i++){
             for(int k=0 ; k<l-1 ; k++){
-                if(k==l){
-                    break;
-                }
+                // if(k==l){
+                //     break;
+                // }
                 if(a[k]>a[k+1]){
                     swap(a[k],a[k+1]);
                 }
-                
             }
         }
-        
-        int sumf=a[0];
-    int sumb=0;
-    flag=false;
-    for(int k=1, b=l-1 ; k<l, b>=0 ; k++,b--){
-        if(b==k){
-            continue;
+        for(int o=0 ; o<l ; o++){
+            cout<<a[o]<<" ";
         }
+        long long sumf=a[0];
+        long long sumb=0;
+        flag=false;
+        int b=l-1;
+        for(int k=1; k<l ; k++){
+        // if(b==k){
+        //     continue;
+        // }
+        if(k<b){
         sumf=sumf+a[k];
-        
         sumb=sumb+a[b];
+        cout<<"start"<<a[k]<<" ";
+        cout<<"end"<<a[b]<<" ";
+        cout<<"sumf"<<sumf<<' ';
+        cout<<"sumd"<<sumb<<' ';
+
         if(sumb>sumf){
             flag=true;
-        }
-                
+            break;
+        }  
+        }   
+        b--;    
     }
-    
-
     if(flag==true){
         cout<<"YES"<<endl;
     }
