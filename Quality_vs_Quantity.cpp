@@ -7,16 +7,16 @@ int main(){
     bool flag=false;
     
 
-    for(int u=0 ; u<t ; u++){
+    for(long long u=0 ; u<t ; u++){
         long long l;
         cin>>l;
         // int a[l];
-        vector<long long> a(l);
-        for(int j=0 ; j<l ; j++){
+        long long a[l];
+        for(long long j=0 ; j<l ; j++){
             cin>>a[j];
         }
-        for(int i=0 ; i<l ; i++){
-            for(int k=0 ; k<l-1 ; k++){
+        for(long long i=0 ; i<l ; i++){
+            for(long long k=0 ; k<l-1 ; k++){
                 // if(k==l){
                 //     break;
                 // }
@@ -25,14 +25,14 @@ int main(){
                 }
             }
         }
-        for(int o=0 ; o<l ; o++){
+        for(long long o=0 ; o<l ; o++){
             cout<<a[o]<<" ";
         }
         long long sumf=a[0];
         long long sumb=0;
         flag=false;
-        int b=l-1;
-        for(int k=1; k<l ; k++){
+        long long b=l-1;
+        for(long long k=1; k<l ; k++){
         // if(b==k){
         //     continue;
         // }
