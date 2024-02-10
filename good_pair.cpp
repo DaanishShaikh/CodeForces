@@ -47,12 +47,8 @@ int main(){
                     break;
                 }
         }
-        
-        
             cout<<ind1<<" "<<ind2<<endl;
-        
-        }
-        
+        }   
     }
     return 0;
 }
