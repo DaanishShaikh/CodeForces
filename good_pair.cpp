@@ -13,42 +13,40 @@ int main(){
         vector<long long>aog(l);
         for(long long j=0 ; j<l ; j++){
             cin>>a[j];
-            if(l>1){
-            aog[j]=a[j];
         }
-        }
-        if(l==1){
-            cout<<"1"<<" "<<"1"<<endl;
-            
-        }
-        if(l>1){
-        for(long long n=0 ; n<l ; n++){
-            for(long long k=0 ; k<l-n-1 ; k++){
-                if(a[k]>a[k+1]){
-                 swap(a[k],a[k+1]);
-            }
-        }
-        }
-        long long first=a[0];
-        long long last=a[l-1];
         
-        bool flag=false;
-        long long ind1,ind2;
-        for(long long p=0 ; p<l ; p++){
+    //     if(l==1){
+    //         cout<<"1"<<" "<<"1"<<endl;
             
-                if(first==aog[p]){
-                    ind1=p+1;
-                    break;
-                }
-        }
-        for(long long p=0 ; p<l ; p++){
-                if(last==aog[p]){
-                    ind2=p+1;
-                    break;
-                }
-        }
-            cout<<ind1<<" "<<ind2<<endl;
-        }   
-    }
+    //     }
+    //     if(l>1){
+    //     for(long long n=0 ; n<l ; n++){
+    //         for(long long k=0 ; k<l-n-1 ; k++){
+    //             if(a[k]>a[k+1]){
+    //              swap(a[k],a[k+1]);
+    //         }
+    //     }
+    //     }
+    //     long long first=a[0];
+    //     long long last=a[l-1];
+        
+    //     bool flag=false;
+    //     long long ind1,ind2;
+    //     for(long long p=0 ; p<l ; p++){
+            
+    //             if(first==aog[p]){
+    //                 ind1=p+1;
+    //                 break;
+    //             }
+    //     }
+    //     for(long long p=0 ; p<l ; p++){
+    //             if(last==aog[p]){
+    //                 ind2=p+1;
+    //                 break;
+    //             }
+    //     }
+    //         cout<<ind1<<" "<<ind2<<endl;
+    //     }   
+    // }
     return 0;
 }
