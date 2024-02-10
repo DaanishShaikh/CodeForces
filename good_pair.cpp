@@ -49,7 +49,6 @@ int main(){
         }
         
         
-        // if(l>1){
             cout<<ind1<<" "<<ind2<<endl;
         
         }
