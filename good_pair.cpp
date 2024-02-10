@@ -13,10 +13,17 @@ int main(){
         vector<long long>aog(l);
         for(long long j=0 ; j<l ; j++){
             cin>>a[j];
+            if(l>1){
             aog[j]=a[j];
         }
+        }
+        if(l==1){
+            cout<<"1"<<" "<<"1"<<endl;
+            
+        }
+        if(l>1){
         for(long long n=0 ; n<l ; n++){
-            for(long long k=0 ; k<l-1 ; k++){
+            for(long long k=0 ; k<l-n-1 ; k++){
                 if(a[k]>a[k+1]){
                  swap(a[k],a[k+1]);
                 //  cout<<a[k]<<" "<<a[k+1];
@@ -26,8 +33,10 @@ int main(){
         // for(int m=0 ; m<l ; m++){
         //     cout<<a[m];
         // }
+        
         long long first=a[0];
         long long last=a[l-1];
+        
         bool flag=false;
         // for(long long o=0 ; o<l ; o++){
         //     if(abs(last-first)==a[o]){
@@ -39,18 +48,22 @@ int main(){
             
                 if(first==aog[p]){
                     ind1=p+1;
+                    break;
                 }
+        }
+        for(long long p=0 ; p<l ; p++){
                 if(last==aog[p]){
                     ind2=p+1;
+                    break;
                 }
-            
         }
-        if(l>1){
+        
+        
+        // if(l>1){
             cout<<ind1<<" "<<ind2<<endl;
+        
         }
-        if(l==1){
-            cout<<"1"<<" "<<"1";
-        }
+        
     }
     return 0;
 }
