@@ -29,10 +29,6 @@ int main(){
             }
         }
         }
-        // for(int m=0 ; m<l ; m++){
-        //     cout<<a[m];
-        // }
-        
         long long first=a[0];
         long long last=a[l-1];
         
