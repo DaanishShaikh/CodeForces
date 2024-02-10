@@ -26,7 +26,6 @@ int main(){
             for(long long k=0 ; k<l-n-1 ; k++){
                 if(a[k]>a[k+1]){
                  swap(a[k],a[k+1]);
-                //  cout<<a[k]<<" "<<a[k+1];
             }
         }
         }
