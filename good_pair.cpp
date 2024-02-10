@@ -33,11 +33,6 @@ int main(){
         long long last=a[l-1];
         
         bool flag=false;
-        // for(long long o=0 ; o<l ; o++){
-        //     if(abs(last-first)==a[o]){
-        //         flag=true;
-        //     }
-        // }
         long long ind1,ind2;
         for(long long p=0 ; p<l ; p++){
             
