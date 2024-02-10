@@ -10,10 +10,20 @@ int main(){
         long long l;
         cin>>l;
         vector <long long>a(l);
-        vector<long long>aog(l);
         for(long long j=0 ; j<l ; j++){
             cin>>a[j];
         }
+        long long max=a[0];
+        long long min=a[0];
+        for(int k=0 ; k<l ; k++){
+            if(a[k]>max){
+                max=a[k];
+            }
+            if(a[k]<min){
+                min=a[k];
+            }
+        }
+        cout<<"max="<<max<<"min="<<min;
         
     //     if(l==1){
     //         cout<<"1"<<" "<<"1"<<endl;
