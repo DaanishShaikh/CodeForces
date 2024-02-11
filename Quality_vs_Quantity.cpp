@@ -3,6 +3,7 @@
 #include<vector>
 using namespace std;
 int main(){
+    ios_base::sync_with_stdio(false);
         long long t;
     cin>>t;
     bool flag=false;
@@ -26,9 +27,9 @@ int main(){
                 }
             }
         }
-        for(long long o=0 ; o<l ; o++){
-            cout<<a[o]<<" ";
-        }
+        // for(long long o=0 ; o<l ; o++){
+        //     cout<<a[o]<<" ";
+        // }
         long long sumf=a[0];
         long long sumb=0;
         flag=false;
@@ -40,10 +41,10 @@ int main(){
         if(k<b){
         sumf=sumf+a[k];
         sumb=sumb+a[b];
-        cout<<"start"<<a[k]<<" ";
-        cout<<"end"<<a[b]<<" ";
-        cout<<"sumf"<<sumf<<' ';
-        cout<<"sumd"<<sumb<<' ';
+        // cout<<"start"<<a[k]<<" ";
+        // cout<<"end"<<a[b]<<" ";
+        // cout<<"sumf"<<sumf<<' ';
+        // cout<<"sumd"<<sumb<<' ';
 
         if(sumb>sumf){
             flag=true;
