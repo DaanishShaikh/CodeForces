@@ -44,7 +44,7 @@ int main(){
         // cout<<"start"<<a[k]<<" ";
         // cout<<"end"<<a[b]<<" ";
         // cout<<"sumf"<<sumf<<' ';
-        cout<<"sumd"<<sumb<<' ';
+        // cout<<"sumd"<<sumb<<' ';
 
         if(sumb>sumf){
             flag=true;
