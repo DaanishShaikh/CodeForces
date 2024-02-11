@@ -26,7 +26,10 @@ int main(){
     // }
     int tempe,tempi1,tempi2;
     for(int m=0 ; m<n ; m++){
-        if(a[m]!=aog[m]){
+        if(aog[m]==a[m]){
+            continue;
+        }
+        else{
             tempi1=m;
             tempe=a[m];
             for(int o=0 ; o<n ; o++){
