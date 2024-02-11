@@ -43,7 +43,7 @@ int main(){
         sumb=sumb+a[b];
         // cout<<"start"<<a[k]<<" ";
         // cout<<"end"<<a[b]<<" ";
-        cout<<"sumf"<<sumf<<' ';
+        // cout<<"sumf"<<sumf<<' ';
         cout<<"sumd"<<sumb<<' ';
 
         if(sumb>sumf){
