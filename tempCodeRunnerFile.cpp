@@ -1,3 +1,1 @@
-for(int k=0 ; k<n ; k++){
-    //     cout<<aog[k];
-    // }
+        // for(long long o=0 ; o<l ; o++){

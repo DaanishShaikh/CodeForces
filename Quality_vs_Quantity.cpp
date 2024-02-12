@@ -28,7 +28,6 @@ int main(){
                 }
             }
         }
-        // for(long long o=0 ; o<l ; o++){
         //     cout<<a[o]<<" ";
         // }
         long long sumf=a[0];
