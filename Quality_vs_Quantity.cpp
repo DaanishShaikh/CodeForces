@@ -33,7 +33,6 @@ int main(){
         flag=false;
         long long b=l-1;
         for(long long k=1; k<l ; k++){
-        // }
         if(k<b){
         sumf=sumf+a[k];
         sumb=sumb+a[b];
