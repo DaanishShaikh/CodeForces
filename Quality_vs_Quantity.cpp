@@ -1,4 +1,5 @@
 //not solved yet
+/*can take sum of the entire sorted array, then subtract the max element from the sum and compare with the largest element*/
 #include<iostream>
 #include<vector>
 using namespace std;
