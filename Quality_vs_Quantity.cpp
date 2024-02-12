@@ -36,7 +36,6 @@ int main(){
         if(k<b){
         sumf=sumf+a[k];
         sumb=sumb+a[b];
-        // cout<<"end"<<a[b]<<" ";
         // cout<<"sumf"<<sumf<<' ';
         // cout<<"sumd"<<sumb<<' ';
 
