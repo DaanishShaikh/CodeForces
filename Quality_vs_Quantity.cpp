@@ -28,7 +28,6 @@ int main(){
                 }
             }
         }
-        // }
         long long sumf=a[0];
         long long sumb=0;
         flag=false;
