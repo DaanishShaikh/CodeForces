@@ -21,7 +21,7 @@ int main(){
         }
         for(long long i=0 ; i<l ; i++){
             for(long long k=0 ; k<l-1 ; k++){
-                if(k==l){
+                // if(k==l){
                 //     break;
                 // }
                 if(a[k]>a[k+1]){
