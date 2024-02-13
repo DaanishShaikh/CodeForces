@@ -26,6 +26,9 @@ int main(){
            if(znum==2){
             cout<<latinpair[num-53].first<<"zz"<<endl;
            }
+           if(num==78){
+            cout<<"zzz";
+           }
         }
     }
 return 0;
