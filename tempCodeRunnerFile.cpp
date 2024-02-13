@@ -24,6 +24,13 @@ for (int i = 0; i < t; i++) {
         }
         else if (n == 27) {
             cout << "aay" << endl;
-        } 
+        } else {
+            int x = n - 26 + 96 - 1;
+            char z = static_cast<char>(x);
+            cout << "a" << z << "z" << endl;
+        }
+    }
+    
+    return 0; 
 }
     
