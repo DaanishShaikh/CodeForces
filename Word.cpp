@@ -17,17 +17,22 @@ int main(){
     if(countu>countl){
         for(int i=0; i<s.size() ; i++){
         s[i]=toupper(s[i]);
+        cout<<s[i];
         }
+        
     }
     else if(countu<countl){
         for(int i=0; i<s.size() ; i++){
         s[i]=tolower(s[i]);
+        cout<<s[i];
         }
     }
     else{
         for(int i=0; i<s.size() ; i++){
         s[i]=tolower(s[i]);
+        cout<<s[i];
         }
+        
     }
     return 0;
     }
