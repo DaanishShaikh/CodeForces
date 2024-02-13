@@ -14,7 +14,7 @@ int main(){
     for(long long u=0 ; u<t ; u++){
         long long l;
         cin>>l;
-        // int a[l];
+        int a[l];
         long long a[l];
         for(long long j=0 ; j<l ; j++){
             cin>>a[j];
