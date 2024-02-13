@@ -24,10 +24,15 @@ int main(){
             cout<<'a'<<latinpair[num-28].first<<'z'<<endl;
            }
            if(znum==2){
+            if(rem==0){
+                cout<<"ayz"<<endl;
+            }
+            else{
             cout<<latinpair[num-53].first<<"zz"<<endl;
+            }
            }
            if(num==78){
-            cout<<"zzz";
+            cout<<"zzz"<<endl;
            }
         }
     }
