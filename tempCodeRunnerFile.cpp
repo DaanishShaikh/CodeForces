@@ -1,13 +1,11 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,m;
-    cin>>n>m;
-    if(n<m){
-        cout<<"YES";
+    int l;
+    cin>>l;
+    int a[l];
+    for(int i=0 ; i<l ; i++){
+        
     }
-    else{
-        cout<<"NO";
-    }
-    return 0;
+
 }
