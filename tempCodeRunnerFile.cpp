@@ -12,3 +12,4 @@ right??
 anyways
 got the black dot yet??
 not yet??
+oh need to push 20 times right??
