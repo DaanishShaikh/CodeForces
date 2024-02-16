@@ -11,3 +11,4 @@ i hope so
 right??
 anyways
 got the black dot yet??
+not yet??
