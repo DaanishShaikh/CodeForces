@@ -10,3 +10,4 @@ doing well??
 i hope so
 right??
 anyways
+got the black dot yet??
