@@ -17,7 +17,7 @@ int main(){
         //         }
         // for(int j=0 ; j<n ; j++){
         //     cout<<a[j]<<endl;
-        // }
+        }
         int flag;
         for(int j=0 ; j<n ; j++){
             for(int i=0 ; i<n ; i++){
