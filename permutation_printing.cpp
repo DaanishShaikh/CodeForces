@@ -9,7 +9,7 @@ int main(){
         int a[n];
         for(int j=0 ; j<n ; j++){
             a[j]=j+1;
-            cout<<a[j]<<endl;
+            // cout<<a[j]<<endl;
         }
         // cout<<endl;
         // for(int j=n-1 ; j>0 ; j--){
