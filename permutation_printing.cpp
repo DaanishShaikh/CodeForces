@@ -13,7 +13,7 @@ int main(){
         }
         // cout<<endl;
         // for(int j=n-1 ; j>0 ; j--){
-        //         swap(a[j],a[j-1]);
+                swap(a[j],a[j-1]);
                 }
         for(int j=0 ; j<n ; j++){
             cout<<a[j]<<endl;
