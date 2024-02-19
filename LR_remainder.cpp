@@ -27,11 +27,11 @@ int main(){
                 a[j]=0;
                 product/=templ;
             }
-            if(s[j]=='R'){
-                tempr=a[k];
-                a[k]=0;
-                product/=tempr;
-            }
+            // if(s[j]=='R'){
+            //     tempr=a[k];
+            //     a[k]=0;
+            //     product/=tempr;
+            // }
 //         }
         
 //     }
