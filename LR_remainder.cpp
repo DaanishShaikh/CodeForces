@@ -8,10 +8,10 @@ int main(){
         cin>>n;
         long long m;
         cin>>m;
-//         long long a[n];
-//         for(long long j=0 ; j<n ; j++){
-//             cin>>a[j];
-//         }
+        long long a[n];
+        for(long long j=0 ; j<n ; j++){
+            cin>>a[j];
+        }
 //         string s;
 //         cin>>s;
 //         long long product=1;
