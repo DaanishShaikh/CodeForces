@@ -19,14 +19,14 @@ int main(){
                 product*=a[k];
             }
 
-//             long long templ,tempr;
-//         for(long long j=0, k=n-1 ; j<n&&k>=0 ; j++,k--){
-//             cout<<product%m<<' ';
-//             if(s[j]=='L'){
-//                 templ=a[j];
-//                 a[j]=0;
-//                 product/=templ;
-//             }
+            long long templ,tempr;
+        for(long long j=0, k=n-1 ; j<n&&k>=0 ; j++,k--){
+            cout<<product%m<<' ';
+            if(s[j]=='L'){
+                templ=a[j];
+                a[j]=0;
+                product/=templ;
+            }
 //             if(s[j]=='R'){
 //                 tempr=a[k];
 //                 a[k]=0;
