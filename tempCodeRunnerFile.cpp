@@ -1,1 +1,1 @@
-                // cout<<"count2="<<count<<' ';
+                // if(y=n-1){break;}
