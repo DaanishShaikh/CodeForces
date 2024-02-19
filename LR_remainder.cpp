@@ -12,12 +12,12 @@ int main(){
         for(long long j=0 ; j<n ; j++){
             cin>>a[j];
         }
-//         string s;
-//         cin>>s;
-//         long long product=1;
-//         for(long long k=0 ; k<n ; k++){
-//                 product*=a[k];
-//             }
+        string s;
+        cin>>s;
+        long long product=1;
+        for(long long k=0 ; k<n ; k++){
+                product*=a[k];
+            }
 
 //             long long templ,tempr;
 //         for(long long j=0, k=n-1 ; j<n&&k>=0 ; j++,k--){
