@@ -3,11 +3,11 @@ using namespace std;
 int main(){
     long long t;
     cin>>t;
-//     for(long long i=0 ; i<t ; i++){
-//         long long n;
-//         cin>>n;
-//         long long m;
-//         cin>>m;
+    for(long long i=0 ; i<t ; i++){
+        long long n;
+        cin>>n;
+        long long m;
+        cin>>m;
 //         long long a[n];
 //         for(long long j=0 ; j<n ; j++){
 //             cin>>a[j];
