@@ -1,0 +1,1 @@
+        // cout<<neg[i]<<endl;
