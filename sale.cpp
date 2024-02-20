@@ -1,4 +1,4 @@
-// worked and
+// worked and accepted
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
