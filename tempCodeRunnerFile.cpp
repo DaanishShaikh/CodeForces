@@ -1,1 +1,3 @@
-        // cout<<neg[i]<<endl;
+  // for(int i=0 ; i<k.size(); i++){
+    //     cout<<k[i];
+    // }
