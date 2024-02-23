@@ -1,4 +1,4 @@
-/*1*/
+/*1 2*/
 #include<bits/stdc++.h>
 using namespace std;
 bool check(vector<int>v){
