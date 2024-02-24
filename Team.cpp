@@ -13,7 +13,7 @@
         for(int i=0 ; i<3 ; i++){
             cin>>v[j][i];
             cout<<v[j][i]<<endl;
-//         }
+        }
 //         cout<<endl;
 //         }
 //         for(int j=0; j<n ; j++){
