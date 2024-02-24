@@ -14,7 +14,7 @@
             cin>>v[j][i];
             cout<<v[j][i]<<endl;
         }
-//         cout<<endl;
+        cout<<endl;
 //         }
 //         for(int j=0; j<n ; j++){
 //         for(int i=0 ; i<3 ; i++){
