@@ -9,7 +9,7 @@
 //         int anscount=0;
          vector<vector<int>>v(n,vector<int>(3));
         int count=0;
-//         for(int j=0; j<n ; j++){
+        for(int j=0; j<n ; j++){
 //         for(int i=0 ; i<3 ; i++){
 //             cin>>v[j][i];
 //             cout<<v[j][i]<<endl;
