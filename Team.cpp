@@ -1,20 +1,26 @@
-/*123456789101112*/
+/*accepted*/
 #include<bits/stdc++.h>
 using namespace std;
  int main(){
     int tt;
     cin>>tt;
-    while(tt--){
-        int n;
-        cin>>n;
-        int a[n*3];
-        for(int i=0 ; i<n*3 ; i++){
-            cin>>a[i];
+    
+        vector<vector<int>>v(tt,vector<int>(3));
+        for(int j=0 ; j<tt ; j++){
+        for(int i=0 ; i<3 ; i++){
+            cin>>v[j][i];
         }
-        cout<<endl;
-        for(int i=0 ; i<n*3 ; i++){
-            cout<<a[i];
         }
-    }
+        int anscount=0;
+        for(int j=0 ; j<tt ; j++){
+        int count=0;
+        for(int i=0 ; i<3 ; i++){
+            if(v[j][i]==1){
+                count++;
+            }
+        }
+        if(count>=2){anscount++;}
+        }
+        cout<<anscount<<endl;
     return 0;
  }
