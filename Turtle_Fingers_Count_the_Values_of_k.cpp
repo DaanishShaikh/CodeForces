@@ -1,4 +1,4 @@
-/*incompl*/
+/*incomple*/
 #include<bits/stdc++.h>
 using namespace std;
 int main (){
