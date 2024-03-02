@@ -24,22 +24,22 @@ int main() {
         v[i] = s;
     }
 
-    for (int i = 0; i < n; i++) {
-        int onecount = 0, zerocount = 0;
-        for (int j = 0; j < v[i].size(); j++) {
-            if (v[i][j] == '1') {
-                onecount++;
-            }
-            if (v[i][j] == '0') {
-                zerocount++;
-            }
-        }
-        p[i].first = onecount;
-        p[i].second = zerocount;
-        cout << onecount << ' ' << zerocount << endl;
-        cout << "p[" << i << "].first = onecount = " << p[i].first << ' '
-             << "p[" << i << "].second = zerocount = " << p[i].second << endl;
-    }
+    // for (int i = 0; i < n; i++) {
+    //     int onecount = 0, zerocount = 0;
+    //     for (int j = 0; j < v[i].size(); j++) {
+    //         if (v[i][j] == '1') {
+    //             onecount++;
+    //         }
+    //         if (v[i][j] == '0') {
+    //             zerocount++;
+    //         }
+    //     }
+    //     p[i].first = onecount;
+    //     p[i].second = zerocount;
+    //     cout << onecount << ' ' << zerocount << endl;
+    //     cout << "p[" << i << "].first = onecount = " << p[i].first << ' '
+    //          << "p[" << i << "].second = zerocount = " << p[i].second << endl;
+    // }
     int max_one=p[0].first, max_zero=p[0].second;
     for(int i=0;i<p.size();i++){
         if(p[i].first>max_one){
