@@ -12,17 +12,17 @@ bool check(const vector<int> &v) {
 }
 
 
-int main() {
-    int n;
-    cin >> n;
-    vector<pair<int, int>> p(n);
-    vector<string> v(n, "100"); // Initialized with "100" strings
+// int main() {
+//     int n;
+//     cin >> n;
+//     vector<pair<int, int>> p(n);
+//     vector<string> v(n, "100"); // Initialized with "100" strings
 
-    string s;
-    for (int i = 0; i < n; i++) {
-        cin >> s;
-        v[i] = s;
-    }
+//     string s;
+//     for (int i = 0; i < n; i++) {
+//         cin >> s;
+//         v[i] = s;
+//     }
 
     for (int i = 0; i < n; i++) {
         int onecount = 0, zerocount = 0;
