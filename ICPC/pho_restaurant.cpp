@@ -40,15 +40,15 @@ int main() {
         cout << "p[" << i << "].first = onecount = " << p[i].first << ' '
              << "p[" << i << "].second = zerocount = " << p[i].second << endl;
     }
-    int max_one=p[0].first, max_zero=p[0].second;
-    for(int i=0;i<p.size();i++){
-        if(p[i].first>max_one){
-            max_one=p[i].first;
-        }
-        if(p[i].second>max_zero){
-            max_zero=p[i].second;
-        }
-    }
+    // int max_one=p[0].first, max_zero=p[0].second;
+    // for(int i=0;i<p.size();i++){
+    //     if(p[i].first>max_one){
+    //         max_one=p[i].first;
+    //     }
+    //     if(p[i].second>max_zero){
+    //         max_zero=p[i].second;
+    //     }
+    // }
     cout<<"max_one="<<max_one<<' '<<"max_zero="<<max_zero<<endl;
     int max_one_i=0, max_zero_i=p[p.size()-1].second;
     for(int i=0;i<p.size();i++){
