@@ -1,15 +1,15 @@
-// #include <bits/stdc++.h>
-// using namespace std;
-// bool check(const vector<int> &v) {
-//     auto prev = v.begin(); // Iterator pointing to the beginning of the vector
-//     for (auto it = v.begin() + 1; it != v.end(); ++it) {
-//         if (*prev != *it) {
-//             return false; // If consecutive elements are not equal, return false
-//         }
-//         prev = it; // Move the 'prev' iterator to the current position
-//     }
-//     return true; // If all consecutive elements are equal, return true
-// }
+#include <bits/stdc++.h>
+using namespace std;
+bool check(const vector<int> &v) {
+    auto prev = v.begin(); // Iterator pointing to the beginning of the vector
+    for (auto it = v.begin() + 1; it != v.end(); ++it) {
+        if (*prev != *it) {
+            return false; // If consecutive elements are not equal, return false
+        }
+        prev = it; // Move the 'prev' iterator to the current position
+    }
+    return true; // If all consecutive elements are equal, return true
+}
 
 
 int main() {
