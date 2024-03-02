@@ -57,18 +57,18 @@ int main() {
             break;
         }
     }
-    // for(int i=p.size();i>0;i--){
-    //     if(p[i].second==max_zero){
-    //         max_zero_i=i;
-    //         break;
-    //     }
-    // }
+    for(int i=p.size();i>0;i--){
+        if(p[i].second==max_zero){
+            max_zero_i=i;
+            break;
+        }
+    }
 
-    // cout<<"max_one_i="<<max_one_i<<' '<<"max_zero_i="<<max_zero_i<<endl;
+    cout<<"max_one_i="<<max_one_i<<' '<<"max_zero_i="<<max_zero_i<<endl;
 
-    // vector<int>a(5);
-    // a={1,1,1,1,1};
-    // cout<<"check="<<check(a)<<endl;
+    vector<int>a(5);
+    a={1,1,1,1,1};
+    cout<<"check="<<check(a)<<endl;
 
 for (int i = 0; i < v.size(); i++) {
     if (check(v[i]) != 1) {
