@@ -49,14 +49,14 @@ int main() {
             max_zero=p[i].second;
         }
     }
-    cout<<"max_one="<<max_one<<' '<<"max_zero="<<max_zero<<endl;
-    int max_one_i=0, max_zero_i=p[p.size()-1].second;
-    for(int i=0;i<p.size();i++){
-        if(p[i].first==max_one){
-            max_one_i=i;
-            break;
-        }
-    }
+    // cout<<"max_one="<<max_one<<' '<<"max_zero="<<max_zero<<endl;
+    // int max_one_i=0, max_zero_i=p[p.size()-1].second;
+    // for(int i=0;i<p.size();i++){
+    //     if(p[i].first==max_one){
+    //         max_one_i=i;
+    //         break;
+    //     }
+    // }
     for(int i=p.size();i>0;i--){
         if(p[i].second==max_zero){
             max_zero_i=i;
