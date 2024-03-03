@@ -17,11 +17,11 @@ int main(){
     int checks=0,checkt=0;
     for(int i=0 ; i<s.size();i++){
         if(s[i]!=t[i]){
-            cout<<i<<endl;
+            //cout<<i<<endl;
         for(int j=0 ; j<26 ; j++){
                 if(s[i]==latinpair[j].first.first||s[i]==latinpair[j].first.second){
                     checks=j;
-                    cout<<"j="<<j<<endl;
+                    //cout<<"j="<<j+1<<endl;
 
                     break;
                 }
@@ -29,12 +29,12 @@ int main(){
         for(int j=0 ; j<26 ; j++){
                 if(t[i]==latinpair[j].first.first||t[i]==latinpair[j].first.second){
                     checkt=j;
-                    cout<<"j="<<j<<endl;
+                    //cout<<"j="<<j+1<<endl;
 
                     break;
                 }
             }
-        if(latinpair[checks].second==latinpair[checkt].second)flag=false;
+        if(latinpair[checks].second!=latinpair[checkt].second)flag=false;
         }
     }
     if(flag==false){
@@ -56,8 +56,8 @@ int main(){
                     break;
                 }
             }
-            if(si>ti)cout<<'1'<<endl;
-            else cout<<"-1"<<endl;
+            if(si>ti){cout<<'1'<<endl;break;}
+            else if(si<ti){cout<<"-1"<<endl;break;}
         }
     }
     }
