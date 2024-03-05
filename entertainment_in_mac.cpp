@@ -10,7 +10,6 @@ int main(){
         cin>>s;
         string t;
         t=reverse(s.begin(),s.end());
-    //     }
             int i=0;
             while(i++){
                 if()
