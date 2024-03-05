@@ -11,9 +11,7 @@ int main(){
         string t;
         t=reverse(s.begin(),s.end());
     
-    //     else if(s.size()==1){
-    //         cout<<s+s<<endl;
-    //     }
+    
     //     else{
     //         string t;
     //         t=s;
