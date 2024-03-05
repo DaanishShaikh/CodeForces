@@ -10,7 +10,6 @@ int main(){
         cin>>s;
         string t;
         t=reverse(s.begin(),s.end());
-    //         reverse(s.begin(),s.end());
     //         cout<<s<<endl;
     //     }
             int i=0;
