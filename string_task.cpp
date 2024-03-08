@@ -2,7 +2,8 @@
 using namespace std;
 int main(){
     pair<pair<char,char>,int> latinpair[26]={
-        {{'a', 'A'}, 1}, {{'b', 'B'}, 2}, {{'c', 'C'}, 3}, {{'d', 'D'}, 4}, 
+        {{'a', 'A'}, 1}, {{'b', 'B'}, 2}, {{'c', 'C'}, 3}, {{'d', 'D'}, 4}, {{'e', 'E'}, 5},
+        {{'f', 'F'}, 6}, 
     };
     string s;
     cin>>s;
