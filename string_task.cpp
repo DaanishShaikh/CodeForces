@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     pair<pair<char,char>,int> latinpair[26]={
-        {{'a', 'A'}, 1}, 
+        {{'a', 'A'}, 1}, {{'b', 'B'}, 2}, 
     };
     string s;
     cin>>s;
@@ -11,7 +11,7 @@ int main(){
             s[i]=tolower(s[i]);
         }
         if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
-
+            
         }
     }
     for(int i=0 ; i<s.size() ; i++){
