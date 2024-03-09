@@ -14,3 +14,5 @@ for(int i=0 ; i<stud_num ; i++){
 }
 
 for(int z=0 ; z<seconds ; z++){
+    for(int j=0 ; j<stud_num-1; j++){
+    if((a[j]=='B')&&(a[j+1]=='G')){
