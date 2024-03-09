@@ -13,3 +13,4 @@ for(int i=0 ; i<stud_num ; i++){
     cin>>a[i];
 }
 
+for(int z=0 ; z<seconds ; z++){
