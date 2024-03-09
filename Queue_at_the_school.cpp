@@ -23,3 +23,10 @@ for(int z=0 ; z<seconds ; z++){
     }
     
 }
+for(int k=0 ; k<stud_num ; k++){
+    cout<<a[k];
+}
+
+
+    return 0;
+}
