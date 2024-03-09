@@ -18,3 +18,6 @@ for(int z=0 ; z<seconds ; z++){
     if((a[j]=='B')&&(a[j+1]=='G')){
         swap(a[j],a[j+1]);
         j++;
+        
+    }
+ 
