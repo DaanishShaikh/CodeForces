@@ -17,3 +17,4 @@ for(int z=0 ; z<seconds ; z++){
     for(int j=0 ; j<stud_num-1; j++){
     if((a[j]=='B')&&(a[j+1]=='G')){
         swap(a[j],a[j+1]);
+        j++;
