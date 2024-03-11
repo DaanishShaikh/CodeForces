@@ -8,6 +8,7 @@ bool check(int n, vector<int>v){
 
 
 
+
 int main(){
     int tt;
     cin>>tt;
