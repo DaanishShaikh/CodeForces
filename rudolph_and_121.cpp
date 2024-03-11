@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+bool check(int n, vector<int>v){
 
 
 
