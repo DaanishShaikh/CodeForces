@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 bool check(int n, vector<int>v){
+    for(int i=0 ; i<n ; i++){
 
 
 
