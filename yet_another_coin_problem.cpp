@@ -20,4 +20,5 @@ int main(){
             }
             if(rem=1){break;}
 
+        }
         
