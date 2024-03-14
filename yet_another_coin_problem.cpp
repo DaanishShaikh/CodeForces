@@ -21,4 +21,5 @@ int main(){
             if(rem=1){break;}
 
         }
+        cout<<count<<endl;
         
