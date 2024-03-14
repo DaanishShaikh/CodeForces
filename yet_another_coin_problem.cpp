@@ -17,4 +17,7 @@ int main(){
             q=q/v[i];
             count+=q;
             cout<<"v["<<i<<"]="<<v[i]<<' '<<"rem="<<rem<<' '<<"q="<<q<<' '<<"count="<<count<<endl;
-            
+            }
+            if(rem=1){break;}
+
+        
