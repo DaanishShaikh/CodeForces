@@ -12,4 +12,7 @@ int main(){
         if(n==1){cout<<'1'<<endl;}
         else{
         for(int i=0 ; i<4 ; i++){
+            if(v[i]<q){
+            rem=q%v[i];
+            q=q/v[i];
             
