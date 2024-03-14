@@ -11,4 +11,5 @@ int main(){
         i64 rem=1,count=0,q=n;
         if(n==1){cout<<'1'<<endl;}
         else{
-        
+        for(int i=0 ; i<4 ; i++){
+            
