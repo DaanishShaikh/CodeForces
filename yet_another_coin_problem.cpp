@@ -15,4 +15,6 @@ int main(){
             if(v[i]<q){
             rem=q%v[i];
             q=q/v[i];
+            count+=q;
+            cout<<"v["<<i<<"]="<<v[i]<<' '<<"rem="<<rem<<' '<<"q="<<q<<' '<<"count="<<count<<endl;
             
