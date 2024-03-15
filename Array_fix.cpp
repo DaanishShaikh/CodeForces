@@ -25,4 +25,13 @@ int main(){
                 w.push_back(v[i]);
             }
         }
+        bool flag = true;
+        for(int i=0 ; i<w.size() ; i++){
+            if(i==w.size()-1){
+                 break;
+            }
+            if(w[i]>w[i+1]){
+                flag=false;
+            }
+        }
         
