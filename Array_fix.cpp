@@ -11,4 +11,18 @@ int main(){
         for(int i=0 ; i<n ; i++){
             cin>>v[i];
         }
+        for(int i=0 ; i<n ; i++){
+            if(v[i]>=10){
+                while(v[i]){
+                    int x=v[i]%10;
+                    v[i]=v[i]/10;
+                    w.push_back(v[i]%10);
+                    w.push_back(x);   
+                    v[i]=v[i]/10;                 
+                }
+
+            } else {
+                w.push_back(v[i]);
+            }
+        }
         
