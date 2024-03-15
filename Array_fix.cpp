@@ -34,4 +34,14 @@ int main(){
                 flag=false;
             }
         }
-        
+        // for(const int& element:w){
+        //     cout<<element;
+        // }
+        if(flag){
+            cout<<"YES"<<endl;
+        } else {
+            cout<<"NO"<<endl;
+        }
+    }
+    return 0;
+}
