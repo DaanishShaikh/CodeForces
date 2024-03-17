@@ -12,6 +12,9 @@ int main(){
         for(int i=0 ; i<n ; i++){
             cin>>v[i];
         }
+        if(k>=2){
+            cout << "YES" << "\n";
+        } else {
         copy(v.begin(),v.end(),c.begin());
         sort(c.begin(),c.end());
         for(int i=0 ; i<v.size() ; i++){
@@ -28,11 +31,13 @@ int main(){
         for(int i=0 ; i<p.size() ; i++){
             // cout<<"i="<<p[i].first<<"j="<<p[i].second<<"\n";
         }
+
         bool flag=true;
         for(int i=0 ; i<p.size() ; i++){
-            if(abs(p[i].first-p[i].second)<=k-1){
+            if(abs(p[i].first-p[i].second)==0){
                 continue;
             } else {
+                // cout<<"p["<<i<<"].first="<<p[i].first<<' '<<"p["<<i<<"].second="<<p[i].second<<endl;
                 flag=false;
             }
         }
@@ -40,6 +45,7 @@ int main(){
             cout << "YES" << "\n";
         } else {
             cout << "NO" << "\n";
+        }
         }
     }
     return 0;
