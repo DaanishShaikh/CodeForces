@@ -10,12 +10,27 @@ int main(){
         cin>>s;
         bool flag=false;
         int count=0;
+        int countd=0;
+        for(int j=0 ; j<s.size() ; j++){
+        for(int i = j ; i<s.size() ; i++){
+            if(s[i]=='.'){
+                countd++;
+            }
+            if(s[i]=='#'){
+                j=i;
+                break;
+            }
+        }
+        if(countd<3){
+            countd=0;
+        }
+        }
         for(int i = 0 ; i<s.size() ; i++){
             if(s[i]=='.'){
                 count++;
             }
         }
-        if(flag){
+        if(countd>=3){
             cout<<'2'<<endl;
         } else {
             cout<<count<<endl;
