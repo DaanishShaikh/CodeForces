@@ -2,12 +2,12 @@
 using namespace std;
 using i64 = long long;
 int main(){
-    int tt;
+    i64 tt;
     cin >> tt;
     while(tt--){
-        int a,b,c;
+        i64 a,b,c;
         cin >> a >> b >> c;
-        int count=0;
+        i64 count=0;
         count+=a;
         if(b%3==0){
             count+=b/3;
