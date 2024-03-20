@@ -56,16 +56,16 @@ using namespace std;
                 //     }
                 //     //cout<<"maxcount="<<maxcount<<"count="<<count<<"i="<<i<<"j="<<j<<endl;
                 // }
-                maxcount=max(maxcount,count);
-                count=0;
-            }
-            //cout<<"maxcount="<<maxcount<<endl;
-            if(maxcount==n/2||v.size()-maxcount==n/2){
-                cout<<"Yes"<<endl;
-            } else {
-                cout<<"No"<<endl;
-            }
-        }
-    }
+    //             maxcount=max(maxcount,count);
+    //             count=0;
+    //         }
+    //         //cout<<"maxcount="<<maxcount<<endl;
+    //         if(maxcount==n/2||v.size()-maxcount==n/2){
+    //             cout<<"Yes"<<endl;
+    //         } else {
+    //             cout<<"No"<<endl;
+    //         }
+    //     }
+    // }
     return 0;
 }
