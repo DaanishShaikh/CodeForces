@@ -38,15 +38,15 @@ using namespace std;
         // else if(check1(v)){
         //     cout<<"Yes"<<endl;
         // }
-        else {
-            sort(v.begin(),v.end());
-            int count=0, maxcount=0;
-            for(int i=0 ; i<n ; i++){
-                for(int j=i ; j<n ; j++){
-                    if(j==n-1){
-                        count++;
-                        break;
-                    }
+        // else {
+        //     sort(v.begin(),v.end());
+        //     int count=0, maxcount=0;
+        //     for(int i=0 ; i<n ; i++){
+        //         for(int j=i ; j<n ; j++){
+        //             if(j==n-1){
+        //                 count++;
+        //                 break;
+        //             }
                     if(v[j]==v[j+1]){
                         count++;
                     } else {
