@@ -18,9 +18,9 @@ using namespace std;
 //     }
 //     return true;
 // }
-int main(){
-    int tt;
-    cin>>tt;
+// int main(){
+//     int tt;
+//     cin>>tt;
     while(tt--){
         int n;
         cin>>n;
