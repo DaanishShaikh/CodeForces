@@ -10,31 +10,31 @@ int check (vector<int>v){
     }
     return count;
 }
-// bool check1 (vector<int>v){
-//     for(int i=0 ; i<v.size() ; i++){
-//         if(v[i]!=v[0]){
-//             return false;
-//         }
-//     }
-//     return true;
-// }
-// int main(){
-//     int tt;
-//     cin>>tt;
-    // while(tt--){
-    //     int n;
-    //     cin>>n;
-    //     vector<int>v(n);
-    //     for(int i=0 ; i<n ; i++){
-    //         cin>>v[i];
-    //     }
-    //     if(v.size()==2){
-    //         cout<<"Yes"<<"\n";
-    //     } 
-    //     else if(check(v)>2){
-    //         cout<<check(v)<<endl;
-    //         cout<<"No"<<endl;
-    //     }
+bool check1 (vector<int>v){
+    for(int i=0 ; i<v.size() ; i++){
+        if(v[i]!=v[0]){
+            return false;
+        }
+    }
+    return true;
+}
+int main(){
+    int tt;
+    cin>>tt;
+    while(tt--){
+        int n;
+        cin>>n;
+        vector<int>v(n);
+        for(int i=0 ; i<n ; i++){
+            cin>>v[i];
+        }
+        if(v.size()==2){
+            cout<<"Yes"<<"\n";
+        } 
+        else if(check(v)>2){
+            cout<<check(v)<<endl;
+            cout<<"No"<<endl;
+        }
         // else if(check1(v)){
         //     cout<<"Yes"<<endl;
         // }
