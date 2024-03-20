@@ -47,15 +47,15 @@ using namespace std;
         //                 count++;
         //                 break;
         //             }
-                    if(v[j]==v[j+1]){
-                        count++;
-                    } else {
-                        count++;
-                        i=j;
-                        break;
-                    }
-                    //cout<<"maxcount="<<maxcount<<"count="<<count<<"i="<<i<<"j="<<j<<endl;
-                }
+                //     if(v[j]==v[j+1]){
+                //         count++;
+                //     } else {
+                //         count++;
+                //         i=j;
+                //         break;
+                //     }
+                //     //cout<<"maxcount="<<maxcount<<"count="<<count<<"i="<<i<<"j="<<j<<endl;
+                // }
                 maxcount=max(maxcount,count);
                 count=0;
             }
