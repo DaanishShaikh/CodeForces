@@ -35,9 +35,9 @@ using namespace std;
     //         cout<<check(v)<<endl;
     //         cout<<"No"<<endl;
     //     }
-        else if(check1(v)){
-            cout<<"Yes"<<endl;
-        }
+        // else if(check1(v)){
+        //     cout<<"Yes"<<endl;
+        // }
         else {
             sort(v.begin(),v.end());
             int count=0, maxcount=0;
