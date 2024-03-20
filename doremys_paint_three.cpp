@@ -1,15 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
-// int check (vector<int>v){
-//     sort(v.begin(),v.end());
-//     int count=0;
-//     for(int i=1 ; i<v.size(); i++){
-//         if(v[i]!=v[i-1]){
-//             count++;
-//         }
-//     }
-//     return count;
-// }
+int check (vector<int>v){
+    sort(v.begin(),v.end());
+    int count=0;
+    for(int i=1 ; i<v.size(); i++){
+        if(v[i]!=v[i-1]){
+            count++;
+        }
+    }
+    return count;
+}
 // bool check1 (vector<int>v){
 //     for(int i=0 ; i<v.size() ; i++){
 //         if(v[i]!=v[0]){
