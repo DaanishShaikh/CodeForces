@@ -10,16 +10,6 @@ int main(){
         for(int i=0 ; i<n ; i++){
             cin>>v[i];
         }
-        if(v.size()==2){
-            cout<<"Yes"<<"\n";
-        } 
-        else if(check(v)>2){
-            cout<<check(v)<<endl;
-            cout<<"No"<<endl;
-        }
-        else if(check1(v)){
-            cout<<"Yes"<<endl;
-        }
         else {
             sort(v.begin(),v.end());
             int count=0, maxcount=0;
