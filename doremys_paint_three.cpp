@@ -10,14 +10,14 @@ using namespace std;
 //     }
 //     return count;
 // }
-bool check1 (vector<int>v){
-    for(int i=0 ; i<v.size() ; i++){
-        if(v[i]!=v[0]){
-            return false;
-        }
-    }
-    return true;
-}
+// bool check1 (vector<int>v){
+//     for(int i=0 ; i<v.size() ; i++){
+//         if(v[i]!=v[0]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
 int main(){
     int tt;
     cin>>tt;
