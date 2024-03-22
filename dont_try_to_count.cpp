@@ -11,11 +11,33 @@ int main(){
         string s;
         cin>>s;
         int count=0;
-        int p=n*m;
-        bool flag=true;
-        while(flag){
-            
-        }
+        if(x.size()>=s.size()){
+            if(x.find(s)!=string::npos){
+                cout<<"0"<<"\n";
+            } else {
+                x=x+x;
+                if(x.find(s)!=string::npos){
+                    cout<<"1"<<"\n";
+                } else {
+                    cout<<"-1"<<"\n";
+                }
+            }
+        } else {
+            while(x.size()<s.size()){
+                x=x+x;
+                count++;
+            }
+            if(x.find(s)!=string::npos){
+                cout<<count<<"\n";
+            } else {
+                x=x+x;
+                count++;
+                if(x.find(s)!=string::npos){
+                    cout<<count<<"\n";
+                } else {
+                    cout<<"-1"<<"\n";
+                }
+            }
         }
     }
     return 0;
