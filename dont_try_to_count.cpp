@@ -8,6 +8,7 @@ int main(){
         cin>>n>>m;
         string x;
         cin>>x;
+        string s;
         
         if(x.size()>=s.size()){
             if(x.find(s)!=string::npos){
