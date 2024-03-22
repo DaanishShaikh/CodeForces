@@ -9,6 +9,7 @@ int main(){
         string x;
         cin>>x;
         string s;
+        cin>>s;
         
         if(x.size()>=s.size()){
             if(x.find(s)!=string::npos){
