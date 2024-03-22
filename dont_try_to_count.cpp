@@ -6,6 +6,7 @@ int main(){
     while(tt--){
         int n , m;
         cin>>n>>m;
+        string x;
         
         if(x.size()>=s.size()){
             if(x.find(s)!=string::npos){
