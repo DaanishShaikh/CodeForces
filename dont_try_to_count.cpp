@@ -10,7 +10,7 @@ int main(){
         cin>>x;
         string s;
         cin>>s;
-        
+        int count=0;
         if(x.size()>=s.size()){
             if(x.find(s)!=string::npos){
                 cout<<"0"<<"\n";
