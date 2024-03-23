@@ -25,7 +25,23 @@ int main(){
                 cout<<"1"<<"\n";
             }
         } else {
-            
+            if(n%2==1){
+                int count=0;
+                for(int i=(n/2)+1; i<n ; i++){
+                    if(v[i]==v[(n/2)]){
+                        count++;
+                        // cout<<"v["<<i<<"]="<<v[i]<<endl;
+                    } else {
+                        break;
+                    }
+                }
+                if(count>0){
+                    cout<<count+1<<"\n";
+                } else {
+                    cout<<'1'<<"\n";
+                }
+            } else{
+                
             }
         }
     }
