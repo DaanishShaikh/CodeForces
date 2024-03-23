@@ -15,7 +15,18 @@ int main(){
         //     cout<<element<<' ';
         // }
         // cout<<endl;
-        
+        if(v.size()==1){
+            cout<<'1'<<"\n";
+        } 
+        else if(v.size()==2){
+            if(v[0]==v[1]){
+                cout<<"2"<<"\n";
+            } else {
+                cout<<"1"<<"\n";
+            }
+        } else {
+            
+            }
         }
     }
     return 0;
