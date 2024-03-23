@@ -30,12 +30,12 @@ int main(){
                 for(int i=(n/2)+1; i<n ; i++){
                     if(v[i]==v[(n/2)]){
                         count++;
-                        //cout<<"v["<<i<<"]="<<v[i]<<endl;
+                        // cout<<"v["<<i<<"]="<<v[i]<<endl;
                     } else {
                         break;
                     }
                 }
-                if(count>1){
+                if(count>0){
                     cout<<count+1<<"\n";
                 } else {
                     cout<<'1'<<"\n";
@@ -45,7 +45,7 @@ int main(){
                 for(int i=(n/2); i<n ; i++){
                     if(v[i]==v[(n/2)-1]){
                         count++;
-                        //cout<<"v["<<i<<"]="<<v[i]<<endl;
+                        // cout<<"v["<<i<<"]="<<v[i]<<endl;
                     } else {
                         break;
                     }
