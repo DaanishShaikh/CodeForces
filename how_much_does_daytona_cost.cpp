@@ -7,6 +7,7 @@ int main(){
         int n,k;
         cin>>n>>k;
         bool flag=false;
+        vector<int>v(n);
         
     }
     return 0;
