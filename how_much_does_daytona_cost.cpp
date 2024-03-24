@@ -11,7 +11,10 @@ int main(){
         for(int i=0 ; i<n ; i++){
             cin>>v[i];
             if(v[i]==k){
-            
+                flag=true;
+            }
+        }
+        
     }
     return 0;
 }
