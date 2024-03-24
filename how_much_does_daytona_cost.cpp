@@ -10,6 +10,7 @@ int main(){
         vector<int>v(n);
         for(int i=0 ; i<n ; i++){
             cin>>v[i];
+            if(v[i]==k){
             
     }
     return 0;
