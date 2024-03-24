@@ -8,7 +8,8 @@ int main(){
         cin>>n>>k;
         bool flag=false;
         vector<int>v(n);
-        
+        for(int i=0 ; i<n ; i++){
+           
     }
     return 0;
 }
