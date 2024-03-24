@@ -9,7 +9,8 @@ int main(){
         bool flag=false;
         vector<int>v(n);
         for(int i=0 ; i<n ; i++){
-           
+            cin>>v[i];
+            
     }
     return 0;
 }
