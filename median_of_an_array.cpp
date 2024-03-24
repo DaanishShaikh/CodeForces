@@ -41,7 +41,20 @@ int main(){
                     cout<<'1'<<"\n";
                 }
             } else{
-                
+                int count=0;
+                for(int i=(n/2); i<n ; i++){
+                    if(v[i]==v[(n/2)-1]){
+                        count++;
+                        // cout<<"v["<<i<<"]="<<v[i]<<endl;
+                    } else {
+                        break;
+                    }
+                }
+                if(count>0){
+                    cout<<count+1<<"\n";
+                } else {
+                    cout<<'1'<<"\n";
+                }
             }
         }
     }
