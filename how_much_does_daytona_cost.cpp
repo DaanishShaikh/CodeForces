@@ -6,6 +6,7 @@ int main(){
     while(tt--){
         int n,k;
         cin>>n>>k;
+        bool flag=false;
         
     }
     return 0;
