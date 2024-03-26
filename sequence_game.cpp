@@ -11,7 +11,10 @@ int main(){
         for(int i=0 ; i<n ; ++i){
             int x;
             cin>>x;
-            
+            if(i&&v.back()>x){
+               
+            }
+            v.push_back(x);
         }
         cout<<v.size()<<endl;
         for(int i : v){
