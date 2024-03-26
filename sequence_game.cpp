@@ -4,6 +4,9 @@ int main(){
     int tt;
     cin>>tt;
     while(tt--){
+        int n;
+        cin>>n;
+        vector<int>v;
         
     }
     return 0;
