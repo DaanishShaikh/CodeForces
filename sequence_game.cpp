@@ -12,7 +12,7 @@ int main(){
             int x;
             cin>>x;
             if(i&&v.back()>x){
-               
+                v.push_back(1);
             }
             v.push_back(x);
         }
