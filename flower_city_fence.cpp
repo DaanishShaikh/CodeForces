@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int tt;
+    // int tt;
     cin>>tt;
     while(tt--){
         int n;
@@ -24,9 +24,9 @@ int main(){
             for(int k=0 ; k<n ; k++){
                 sum+=v[k];
             }
-            if(sum=0){
-                break;
-            }
+            // if(sum=0){
+            //     break;
+            // }
                 if(v[i]&&count==v[i]){
                     //cout<<"v["<<i<<"]="<<v[i]<<endl;
                     //cout<<"entered if at"<<i<<""<<"\n";
