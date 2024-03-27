@@ -19,10 +19,17 @@ int main(){
                         count++;
                     }
                 }
-                cout<<"count="<<count<<endl;
+                //cout<<"count="<<count<<endl;
+                int sum=0;
+            for(int k=0 ; k<n ; k++){
+                sum+=v[k];
+            }
+            if(sum=0){
+                break;
+            }
                 if(v[i]&&count==v[i]){
-                    cout<<"v["<<i<<"]="<<v[i]<<endl;
-                    cout<<"entered if at"<<i<<""<<"\n";
+                    //cout<<"v["<<i<<"]="<<v[i]<<endl;
+                    //cout<<"entered if at"<<i<<""<<"\n";
                     v[i]=0;
                     for(int j=i ; j<n ; j++){
                         if(v[j]>0){
@@ -31,7 +38,11 @@ int main(){
                     }
                 } else if(v[i]==0){
                     break;
-                } else {
+                } else if(v[i]==0&&sum!=0){
+                    flag=0;
+                    break;
+                }
+                else {
                     flag=0;
                     break;
                 }
