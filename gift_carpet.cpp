@@ -19,22 +19,22 @@ int main(){
             }
         }
         bool flag=0;
-        for(int i=0 ; i<n ; i++){
+        for(int i=0 ; i<m ; i++){
             if(flag){break;}
-            for(int j=0 ; j<m ; j++){
+            for(int j=0 ; j<n ; j++){
                 if(s.size()==0){
                     flag=1;
                     break;
                 }
                 if((c[j][i]==s.top())&&(i>=temp)&&(s.size()!=0)){
-                    cout<<"c["<<j<<"]["<<i<<"]="<<c[j][i]<<' '<<"s.top="<<s.top()<<' '<<"s.size="<<s.size()<<' '<<"temp="<<temp<<endl;
+                    //cout<<"c["<<j<<"]["<<i<<"]="<<c[j][i]<<' '<<"s.top="<<s.top()<<' '<<"s.size="<<s.size()<<' '<<"temp="<<temp<<endl;
                     temp=i;
                     temp++;
                     s.pop();
-                    break;
                 }
             }
         }
+        
         if(s.size()==0){
             cout<<"YES"<<"\n";
         } else {
