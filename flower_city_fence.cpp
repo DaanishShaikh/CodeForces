@@ -13,7 +13,13 @@ int main(){
         bool flag=1;
         while(true){
             for(int i=0 ; i<n ; i++){
-                if(v[i]&&v[i]==v.size()-i){
+                int count=0;
+                for(int z=0 ; z<n ; z++){
+                    if(v[z]!=0){
+                        count++;
+                    }
+                }
+                if(v[i]&&count==v[i]){
                     v[i]=0;
                     for(int j=i ; j<n ; j++){
                         if(v[j]>0){
@@ -24,6 +30,13 @@ int main(){
                     flag=0;
                     break;
                 }
+            }
+            int sum=0;
+            for(int k=0 ; k<n ; k++){
+                sum+=v[k];
+            }
+            if(sum=0){
+                break;
             }
         }
     }
