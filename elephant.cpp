@@ -9,4 +9,6 @@ int main(){
         if(n%5==0){
             cout<<n/5<<endl;
         } else {
-        
+            cout<<(n/5)+1<<endl;
+        }
+    
