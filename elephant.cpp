@@ -5,4 +5,5 @@ int main(){
     cin>>n;
     if(n<=5){
         cout<<'1'<<endl;
-    } 
+    } else {
+        
