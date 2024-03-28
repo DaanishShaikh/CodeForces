@@ -7,5 +7,6 @@ int main(){
         cout<<'1'<<endl;
     } else {
         if(n%5==0){
-            
-}
+            cout<<n/5<<endl;
+        } else {
+        
