@@ -11,4 +11,6 @@ int main(){
         } else {
             cout<<(n/5)+1<<endl;
         }
-    
+    }
+    return 0; 
+}
