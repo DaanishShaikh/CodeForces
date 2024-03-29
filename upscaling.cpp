@@ -9,6 +9,9 @@ int main(){
         cin>>n;
         vector<vector<char>>v(2*n,vector<char>(2*n));
 
+        for(int i=0 ; i<2*n ; i++){
+           
+        }
         
     }
     
