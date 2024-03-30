@@ -29,15 +29,15 @@ int main(){
         //for(int i=0 ; i<c.size() ; i++){
         //    for(int j=0 ; j<b.size() ; j++){
         //        if(b.size()==0||c.size()==0){
-                    break;
-                }
-            if(b[j]%c[i]==0){
-                // cout<<"entered if";
-                b.push_back(c[i]);
-                c.erase(c.begin()+i);
-            }
-        } 
-        }    //
+        //             break;
+        //         }
+        //     if(b[j]%c[i]==0){
+        //         // cout<<"entered if";
+        //         b.push_back(c[i]);
+        //         c.erase(c.begin()+i);
+        //     }
+        // } 
+        // }    //
         if(count==n){
             cout<<"-1"<<"\n";
         } else {
