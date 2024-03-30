@@ -21,11 +21,11 @@ int main(){
                 count++;
             }
         }
-        for(int i=0 ; i<b.size() ; i++){ //
-            if(b[i]==-1){
-                b.erase(b.begin()+i);
-            }
-        }
+        // for(int i=0 ; i<b.size() ; i++){ //
+        //     if(b[i]==-1){
+        //         b.erase(b.begin()+i);
+        //     }
+        // }
         for(int i=0 ; i<c.size() ; i++){
             for(int j=0 ; j<b.size() ; j++){
                 if(b.size()==0||c.size()==0){
