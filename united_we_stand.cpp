@@ -14,30 +14,30 @@ int main(){
         vector<int>b;
         vector<int>c;
         int count=0;
-        // copy(v.begin(),v.begin()+(v.size()/2),b.begin());
-        // copy(v.begin()+(v.size()/2)+1, v.end() ,c.begin());
+        //copy(v.begin(),v.begin()+(v.size()/2),b.begin()); //
+        copy(v.begin()+(v.size()/2)+1, v.end() ,c.begin()); //
         for(int i=0 ; i<v.size() ; i++){
             if(v[i]==v[0]){
                 count++;
             }
         }
-        // for(int i=0 ; i<b.size() ; i++){
-        //     if(b[i]==-1){
-        //         b.erase(b.begin()+i);
-        //     }
-        // }
-        // for(int i=0 ; i<c.size() ; i++){
-        //     for(int j=0 ; j<b.size() ; j++){
-        //         if(b.size()==0||c.size()==0){
-        //             break;
-        //         }
-        //     if(b[j]%c[i]==0){
-        //         // cout<<"entered if";
-        //         b.push_back(c[i]);
-        //         c.erase(c.begin()+i);
-        //     }
-        // } 
-        // }
+        for(int i=0 ; i<b.size() ; i++){ //
+            if(b[i]==-1){
+                b.erase(b.begin()+i);
+            }
+        }
+        for(int i=0 ; i<c.size() ; i++){
+            for(int j=0 ; j<b.size() ; j++){
+                if(b.size()==0||c.size()==0){
+                    break;
+                }
+            if(b[j]%c[i]==0){
+                // cout<<"entered if";
+                b.push_back(c[i]);
+                c.erase(c.begin()+i);
+            }
+        } 
+        }    //
         if(count==n){
             cout<<"-1"<<"\n";
         } else {
