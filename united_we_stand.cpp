@@ -15,7 +15,7 @@ int main(){
         vector<int>c;
         int count=0;
         //copy(v.begin(),v.begin()+(v.size()/2),b.begin()); //
-        copy(v.begin()+(v.size()/2)+1, v.end() ,c.begin()); //
+        //copy(v.begin()+(v.size()/2)+1, v.end() ,c.begin()); //
         for(int i=0 ; i<v.size() ; i++){
             if(v[i]==v[0]){
                 count++;
