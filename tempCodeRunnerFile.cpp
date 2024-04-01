@@ -1,36 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int tt;
-    cin>>tt;
-    while(tt--){
-        int a,b,c;
-        cin>>a>>b>>c;
-        if(a==b){
-            if(c%2==0){
-                cout<<"Second"<<endl;
-            } else{
-                cout<<"First"<<"\n";
-            }
-        } else {
-            if(a>b){
-                a-=b;
-                c-=a;
-            if(c%2==0){
-                cout<<"Second"<<endl;
-            } else{
-                cout<<"First"<<"\n";
-            }
-            } else{
-                b-=a;
-                c-=b;
-            if(c%2==0){
-                cout<<"Second"<<endl;
-            } else{
-                cout<<"First"<<"\n";
-            }
-            }
-        }
-    }
-    return 0;
-}
+    int n;
+    cin>>n;
+    string s;
+    cin>>s;
+    int count=0;
+    for(int i=0 ; i<n ; i++){
+        if(s[i]==s[i+1]){
+            for(int j=i+1 ; j<n ; j++){
+                if(s[j]==s[i]){
