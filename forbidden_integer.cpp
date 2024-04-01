@@ -32,11 +32,8 @@ int main(){
                for(int i=0 ; i<m ; i++){
                     ans.push_back(v[i]);
                }
-               if(a!=1){ 
                a=a%v[i];
-               } else {
-                a--;
-               }
+               
             }
             }
 
