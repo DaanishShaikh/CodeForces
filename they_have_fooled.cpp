@@ -1,10 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int tt;
-    cin>>tt;
-    while(tt --){
-        ll n;
+        int n;
         cin >> n;
         if(n == 12) cout << 8;
         else if(n == 11) cout << 6;
@@ -19,6 +16,5 @@ int main(){
         else if(n == 2) cout << 8;
         else if(n == 1) cout << 10;
         else if(n == 0) cout << 10;
-    }
     return 0;
 }
