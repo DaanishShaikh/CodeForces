@@ -14,7 +14,6 @@ int main(){
             v.push_back(x);
             occ[x]++;
         }
-        //cout<<endl;
         // cout<<occ[-1]<<endl;
         // cout<<occ[1]<<endl;
         int count=0;
