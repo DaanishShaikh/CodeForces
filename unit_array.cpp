@@ -14,7 +14,6 @@ int main(){
             v.push_back(x);
             occ[x]++;
         }
-        // cout<<occ[1]<<endl;
         int count=0;
         if(occ[-1]>occ[1]){
             while(occ[-1]>occ[1]){
