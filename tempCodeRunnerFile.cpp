@@ -2,28 +2,23 @@
 using namespace std;
 int main(){
     int tt;
-    cin>>tt;
+    cin >> tt;
     while(tt--){
-        int n,k;
-        cin>>n>>k;
-        if(n>=k){
-        if(k==1){
-            cout<<"YES"<<endl;
+        long a,b,c,d;
+        cin >> a >> b >> c >> d ; 
+        int count=0;
+        if(b<d){
+            count+=abs(d-b);
+            a+=abs(d-b);
         }
-        else if(n%2==0){
-            cout<<"YES"<<endl;
-        }
-        else if(k==3){
-            cout<<"YES"<<endl;
+        if(a>c){
+            count+=abs(a-c);
+            cout<<count<<endl;
+        } 
+        else if(a==c){
+            cout<<count<<endl;
         } else {
-            if((n%k)%2==0){
-                cout<<"YES"<<endl;
-            } else {
-                cout<<"NO"<<endl;
-            }
-        }
-        } else {
-            cout<<"NO"<<endl;
+            cout<<"-1"<<endl;
         }
     }
     return 0;
