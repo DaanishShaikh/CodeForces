@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int tt;
+    long long tt;
     cin>>tt;
     while(tt--){
-        int n,k;
+        long long n,k;
         cin>>n>>k;
         if(n>=k){
         if(k==1){
