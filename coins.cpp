@@ -13,7 +13,7 @@ int main(){
         else if(n%2==0){
             cout<<"YES"<<endl;
         }
-        else if(k==3){
+        else if(k%2==1){
             cout<<"YES"<<endl;
         } else {
             if((n%k)%2==0){
