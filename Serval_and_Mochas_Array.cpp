@@ -1,29 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-bool prime(int n){
-    vector<bool>p(n);
-    for(int i=2 ; i<=n ; i++){
-        p[i]=1;
-    }
-    for(int i=2 ; i<=n ; i++){
-        for(int j=i*i ; j<=n ; j+=i){
-            p[j]=0;
-        }
-    }
-    vector<int>prime;
-    for(int i=2 ; i<=n ; i++){
-        if(p[i]==1){
-            prime.push_back(i);
-            // cout<<i<<' ';
-        }
-    }
-    for(int i=0 ; i<prime.size() ; i++){
-        if(prime[i]==n){
-            return 1;
-        }
-    }
-    return 0;
-}
 int main(){
     int tt;
     cin >> tt;
@@ -42,6 +18,12 @@ int main(){
             if(prime(c[i])){
                 lp=c[i];
                 break;
+            }
+        }
+        bool flag=1;
+        for(int i=0 ; i<n ; i++){
+            if(v[i]%lp!=0){
+                flag=0;
             }
         }
         cout<<"lp="<<lp<<endl;
