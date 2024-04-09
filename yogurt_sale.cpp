@@ -8,9 +8,9 @@ int main(){
         cin >> a >> b >> c;
         if(2*b>c){
             if(a%2==0){
-                cout<<c*(n/2)<<endl;
+                cout<<c*(a/2)<<endl;
             } else {
-                cout<< (c*(n/2)) + b<<endl;
+                cout<< (c*(a/2)) + b<<endl;
             }
         } else {
             cout<<a*b<<endl;
