@@ -35,7 +35,7 @@ int main(){
                 if(n==8){
                     cout<<2<<' '<<2<<endl;
                 } else {
-                    cout<<n/6<<' '<<n/4<<endl;   
+                    cout<<n/6+1<<' '<<n/4<<endl;   
                 }
             }
         } else {
