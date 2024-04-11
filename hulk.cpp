@@ -6,21 +6,21 @@ int main(){
     if(n>1){
     for(int i=0 ; i<n ; i++){
         if(i==0){
-            cout<<"i hate that ";
+            cout<<"I hate that ";
         } 
         else if(i%2&&i!=n-1){
-            cout<<"i love that ";
+            cout<<"I love that ";
         } 
         else if((i%2==0)&&(i!=n-1)){
-            cout<<"i hate that ";
+            cout<<"I hate that ";
         } else if(i%2&&i==n-1){
-            cout<<"i love it ";
+            cout<<"I love it ";
         } else if(i%2==0&&i==n-1){
-            cout<<"i hate it ";
+            cout<<"I hate it ";
         }
     }
     } else {
-        cout<<"i hate it";
+        cout<<"I hate it";
     }
     return 0;
 }
