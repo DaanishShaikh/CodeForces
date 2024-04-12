@@ -29,17 +29,23 @@ int main(){
             break;
         }
     }
-    int count=1;
+    unordered_map<int,int>occ;
     for(int i=0 ; i<ribbon.size() ; i++){
-        if(ribbon[i]!=1){
-            count++;
-        }
+        occ[ribbon[i]]++;
     }
-    for(int i=0 ; i<ribbon.size() ; i++){
-        cout<<ribbon[i]<<' ';
+    int sum=0;
+    for(int i=2 ; i<=m ; i++){    
+            sum+=occ[i];
+        
     }
-    cout<<endl;
-    if(k>=count){
+
+    // for(int i=0 ; i<ribbon.size() ; i++){
+    //     cout<<ribbon[i]<<' ';
+    // }
+    // cout<<endl;
+    //cout<<"count="<<count<<endl;
+    //cout<<"sum="<<sum<<endl;
+    if(k>=sum){
         cout<<"NO"<<endl;
     } else {
         cout<<"YES"<<endl;
