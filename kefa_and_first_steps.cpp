@@ -7,16 +7,15 @@ int main(){
     for(int i=0 ; i<n ; i++){
         cin >> v[i];
     }
-    int count=0;
+    int count=1;
     bool flag=0;
     int maxprogress=0;
     for(int i=1 ; i<n ; i++){
         if(v[i]>=v[i-1]){
             count++;
         } else {
-            count++;
             maxprogress=max(maxprogress,count),
-            count=0;
+            count=1;
         }
     }
     maxprogress=max(maxprogress,count);
