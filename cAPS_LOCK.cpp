@@ -1,9 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
+int countupper(string s){
+    int count=0;
+    for(int i=0 ; i<s.size() ; i++){
+        if(islower(s[i])){
+            count++;
+        }
+    }
+    return count;
+}
 int main(){
     string s;
     cin >> s;
-    if(islower(s[0])&&isupper(s[1])){
+    if(countupper(s)>1){
+        //donothing
+    }
+    else if(islower(s[0])&&isupper(s[1])){
         for(int i=1 ; i<s.size() ; i++){
             s[i]=tolower(s[i]);
         }
