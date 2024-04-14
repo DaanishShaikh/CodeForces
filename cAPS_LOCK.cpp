@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-int countupper(string s){
+int countlower(string s){
     int count=0;
-    for(int i=0 ; i<s.size() ; i++){
+    for(int i=1 ; i<s.size() ; i++){
         if(islower(s[i])){
             count++;
         }
@@ -12,7 +12,14 @@ int countupper(string s){
 int main(){
     string s;
     cin >> s;
-    if(countupper(s)>1){
+    if(s.size()==1){
+        if(islower(s[0])){
+        s[0]=toupper(s[0]);
+        } else {
+            s[0]=tolower(s[0]);
+        }
+    }
+    else if(countlower(s)>=1){
         //donothing
     }
     else if(islower(s[0])&&isupper(s[1])){
