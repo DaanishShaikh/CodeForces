@@ -9,7 +9,7 @@ int main(){
         int x;
         cin >> x;
         if(x>0){
-            occ[1]=x;
+            occ[1]+=x;
         }
         if(x==-1){
             if(occ[1]>0){
@@ -19,5 +19,6 @@ int main(){
             }
         }
     }
+    cout<<count<<endl;
     return 0;
 }
