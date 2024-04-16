@@ -1,26 +1,31 @@
 #include<bits/stdc++.h>
 using namespace std;
-vector<double>points;
 int main(){
-    double n,l;
-    cin >> n >> l;
-    for(int i=0 ; i<n ; i++){
-        int point;
-        cin >> point;
-        points.push_back(point);
-    }
-    sort(points.begin(),points.end());
-    double diameter=2*max(points[0],l-points[n-1]);
-    for(int i=1 ; i<n ; i++){
-        diameter=max(diameter,points[i]-points[i-1]);
-        //cout<<"diameter"<<i<<"="<<diameter<<endl;
+    long long n;
+    cin >> n;
+    long long p=1000006;
+    vector<bool>primes(p+1,1);
+    primes[0]=0;
+    primes[1]=0;
+    for(long long i=2 ; i<=p ; i++){
+        if(primes[i] && (long long)i * i <= p){
+            for(long long j=i*i ; j<=p ; j++){
+                if(j%i==0&&primes[j]==1){
+                    primes[j]=0;
+                }
+            }
+        }
     }
     
-    //cout<<"diameter="<<diameter<<endl;
-    double radius=diameter/2;
-    cout<<fixed<<setprecision(10)<<diameter/2.00<<'\n';
-    // for(int i=0 ; i<n ; i++){
-    //     cout << points[i]<<' ';
-    // }
+    while(n--){
+        long long k;
+        cin >> k;
+        long long u=(long long)sqrt(k);
+        if((long long)u*u==k&&primes[u]){
+            cout<<"YES"<<endl;
+        } else {
+            cout<<"NO"<<endl;
+        }
+    }
     return 0;
 }
