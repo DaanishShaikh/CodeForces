@@ -14,8 +14,7 @@ int main(){
         if(houses[i]>=houses[i-1]){
             ans+=houses[i]-houses[i-1];
         } else {
-            ans+=a-houses[i];
-            ans+=houses[i]-1;
+            ans+=((a-houses[i-1])+1)+(houses[i]-1);
         }
     }
     cout<<ans<<endl;
