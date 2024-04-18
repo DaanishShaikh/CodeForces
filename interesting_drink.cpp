@@ -34,13 +34,19 @@ int binarysearch(int n, vector<int>s){
             // cout<<"v["<<upper<<"]upper="<<v[upper]<<endl;
         } else if (s[mid]!=n && s[upper]<n && s[lower]>n){
             return mid-1;
+        } 
+        else if(mid==s.size()-1){
+            return s.size()-1;
+        }
+        else {
+            return mid;
         }
     }
 }
 int main(){
     int n;
     cin >> n;
-    vector<int>v(n);
+    int v[n];
     for(int i=0 ; i<n ; i++){
         cin >> v[i];
     }
@@ -50,18 +56,9 @@ int main(){
     for(int i=0 ; i<q ; i++){
         cin >> vv[i];
     }
-    sort(v.begin(),v.end());
+    sort(v,v+n);
     for(int i=0 ; i<q ; i++){
-        int bs=binarysearch(vv[i],v);
-        if(vv[i]>=v[0]){
-            if(find(v.begin(),v.end(),vv[i])!=v.end()){
-                cout<<bs + 1<<endl;
-            } else {
-                cout<<bs<<endl;
-            }
-        } else {
-            cout<<'0'<<endl;
-        }
+        cout<<upper_bound(v,v+n,vv[i])-v<<endl;
     }
     return 0;
 }
