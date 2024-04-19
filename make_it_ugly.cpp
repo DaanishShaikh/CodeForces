@@ -18,30 +18,47 @@ int main(){
         for(int i=0 ; i<n ; i++){
             cin >> beauty[i];
         }
-        int count1=1,count2=1;
-        for(int i=n-1 ; i>=0 ; i--){
-            //cout<<"beauty["<<i<<"]="<<beauty[i]<<endl;
-            if(beauty[i]==beauty[i-1]){
-                count1++;
-                //cout<<"if beauty["<<i<<"]="<<beauty[i]<<endl;
-            } else {
-                //cout<<"else beauty["<<i<<"]="<<beauty[i]<<endl;
-                break;
-            }
-        }
+        // int count1=1,count2=1;
+        // for(int i=n-1 ; i>=0 ; i--){
+        //     //cout<<"beauty["<<i<<"]="<<beauty[i]<<endl;
+        //     if(beauty[i]==beauty[i-1]){
+        //         count1++;
+        //         //cout<<"if beauty["<<i<<"]="<<beauty[i]<<endl;
+        //     } else {
+        //         //cout<<"else beauty["<<i<<"]="<<beauty[i]<<endl;
+        //         break;
+        //     }
+        // }
+        // for(int i=0 ; i<beauty.size() ; i++){
+        //     if(beauty[i]==beauty[i+1]){
+        //         count2++;
+        //         //cout<<"if beauty["<<i<<"]="<<beauty[i]<<endl;
+        //     } else {
+        //         //cout<<" else beauty["<<i<<"]="<<beauty[i]<<endl;
+        //         break;
+        //     }
+        // }
+        int count=0;
+        int mincount=INT_MAX;
         for(int i=0 ; i<beauty.size() ; i++){
-            if(beauty[i]==beauty[i+1]){
-                count2++;
-                //cout<<"if beauty["<<i<<"]="<<beauty[i]<<endl;
-            } else {
-                //cout<<" else beauty["<<i<<"]="<<beauty[i]<<endl;
-                break;
+            //cout<<"beauty["<<i<<"]="<<beauty[i]<<endl;
+            if(beauty[i]==beauty[0] && i==beauty.size()-1){
+                count++;
+                mincount=min(mincount,count);
+            } 
+            else if(beauty[i]==beauty[0]){
+                count++;
+                //cout<<"if beauty["<<i<<"]="<<beauty[i]<<"count="<<count<<endl;
+            }
+            else {
+                mincount=min(mincount,count);
+                count=0;
             }
         }
         if(checksame(beauty)){
             cout<<"-1"<<endl;
         } else {
-            cout<<min(count1,count2)<<endl;
+            cout<<mincount<<endl;
         }
     }
     return 0;
