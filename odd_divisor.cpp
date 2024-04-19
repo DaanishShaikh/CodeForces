@@ -18,7 +18,7 @@ int main(){
                 break;
             }
         }
-        if(n<=3){
+        if(n<=2){
             cout<<"NO"<<endl;
         }
         }
