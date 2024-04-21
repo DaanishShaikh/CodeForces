@@ -1,23 +1,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n;
-    cin >> n;
-    if(n>=0){
-        cout<<n<<endl;
-    } else {
-    int temp=n;
-    int last=0,slast=0;
-    last=abs(temp%10);
-    temp/=10;
-    slast=abs(temp%10);
-    if(last>=slast){
-        cout<<n/10<<endl;
-    } else {
-        n/=10;
-        n=n+abs(n%10);
-        n=n-last;
-        cout<<n<<endl;
+    int tt;
+    cin >> tt;
+    while(tt--){
+    long long a,b,c;
+    cin>>a>>b>>c;
+    long long ans=0;
+    //cout<<"c%a="<<c%a<<endl;
+    if(c>a){
+        if(c%a!=b){
+            if(c%a<b){
+        ans+=c-(c%a)-(a-b);
+        cout<<ans<<endl;
+            } else {
+                cout<<c-((c%a)-b)<<endl;
+            }
+        } else {
+            cout<<c<<endl;
+        }
+    }
+    else if(a==c && b==0){
+        cout<<a<<endl;
+    }
+    else {
+    cout<<'0'<<endl;
     }
     }
     return 0;
