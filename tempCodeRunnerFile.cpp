@@ -4,27 +4,17 @@ int main(){
     int tt;
     cin >> tt;
     while(tt--){
-    long long a,b,c;
-    cin>>a>>b>>c;
-    long long ans=0;
-    //cout<<"c%a="<<c%a<<endl;
-    if(c>a){
-        if(c%a!=b){
-            if(c%a<b){
-        ans+=c-(c%a)-(a-b);
-        cout<<ans<<endl;
-            } else {
-                cout<<c-((c%a)-b)<<endl;
-            }
-        } else {
-            cout<<c<<endl;
-        }
+    int n;
+    cin >> n;
+    vector<int>v;
+    for(int i=2 ; i<sqrt(1000006) ; i++){
+        v.push_back(i*i);
     }
-    else if(a==c && b==0){
-        cout<<a<<endl;
-    }
-    else {
-    cout<<'0'<<endl;
+    int upper=upper_bound(v.begin(),v.end(),n)-v.begin();
+    if(n>=4){
+    cout<<sqrt(v[upper-1])<<endl;
+    } else {
+        cout<<'1'<<endl;
     }
     }
     return 0;
