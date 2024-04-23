@@ -12,9 +12,9 @@ int main(){
         count++;
     }
     if(sum>n){
-    cout<<sum<<endl;
-    cout<<count-1<<endl;}
-    else {
+    //cout<<sum<<endl;
+    cout<<count-1<<endl;
+    } else {
         cout<<count<<endl;
     }
     return 0;
