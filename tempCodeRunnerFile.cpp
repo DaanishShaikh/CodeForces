@@ -1,1 +1,6 @@
-    // sort(s.begin(),s.end());
+if(m%a==0){
+        //     ans++;
+        // }
+        // if(m%b==0){
+        //     ans++;
+        // }
