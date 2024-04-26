@@ -8,24 +8,14 @@ int main(){
         cin>>n;
         int k;
         cin>>k;
-        int count=0;
-        int square=0;
-        for(int j=0 ; ; j++){
-            square++;
-            // cout<<"square="<<square;
-            if(square==n+n-1||square==n+n){
-                count++;
-                // cout<<"count="<<count<<" ";
+        if(k<=(4*n)-4){
+            if(k%2==0){
+            cout<<k/2<<endl;
+            } else {
+                cout<<(k/2)+1<<endl;
             }
-            else if(square!=n+n-1||square!=n+n){
-                count+=2;
-                // cout<<"count="<<count<<' ';
-            }
-            
-            if(count>=k){
-                cout<<square<<endl;
-                break;
-            }
+        } else if(k>=(4*n)-3){
+            cout<<(k/2)+1<<endl;
         }
     }
     return 0;
