@@ -8,15 +8,9 @@ int main(){
         cin>>n;
         string s;
         cin>>s;
-        string t;
-        t=reverse(s.begin(),s.end());
-            int i=0;
-            while(i++){
-                if()
-
-                
-            }
-        
+        string t=s;
+        reverse(t.begin(),t.end());
+        cout<<min(s,t+s)<<endl;
     }
     return 0;
 }
