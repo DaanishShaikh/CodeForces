@@ -19,25 +19,44 @@ int main(){
             cin >> o[i];
             mino=min(mino,o[i]);
         }
-        cout<<"minc="<<minc<<endl<<"mino="<<mino<<endl;
+        //cout<<"minc="<<minc<<endl<<"mino="<<mino<<endl;
         i64 count=0;
         for(int i=0 ; i<n ; i++){
-            if(c[i]!=minc && o[i]!=mino){
-                cout<<"count1="<<count<<endl;
-                count+=min(c[i]-minc,o[i]-mino);
-                c[i]-=min(c[i]-minc,o[i]-mino);
-                o[i]-=min(c[i]-minc,o[i]-mino);
-                cout<<"count1end="<<count<<endl;
+            if(c[i]!=minc && o[i]!=mino && c[i]>o[i]){
+               // cout<<"count1="<<count<<endl;
+                int temp=o[i]-mino;
+                count+=temp;
+                c[i]-=temp;
+                o[i]-=temp;
+                //cout<<"count1end="<<count<<endl;
+            }
+            if(c[i]!=minc && o[i]!=mino && c[i]<o[i]){
+                //cout<<"count1="<<count<<endl;
+                int temp=c[i]-minc;
+                count+=temp;
+                c[i]-=temp;
+                o[i]-=temp;
+                //cout<<"count1end="<<count<<endl;
+            }
+            if(c[i]!=minc && o[i]!=mino && c[i]==o[i]){
+                ///cout<<"count1="<<count<<endl;
+                int temp=o[i]-mino;
+                count+=temp;
+                c[i]-=temp;
+                o[i]-=temp;
+                //cout<<"count1end="<<count<<endl;
             }
             if(c[i]>minc && o[i]==mino){
-                cout<<"count2="<<count<<endl;
+                //cout<<"count2="<<count<<endl;
                 count+=c[i]-minc;
-                cout<<"count2end="<<count<<endl;
+                c[i]=minc;
+                //cout<<"count2end="<<count<<endl;
             }
             if(c[i]==minc && o[i]>mino){
-                cout<<"count3="<<count<<endl;
+                //cout<<"count3="<<count<<endl;
                 count+=o[i]-mino;
-                cout<<"count3end="<<count<<endl;
+                o[i]=mino;
+                //cout<<"count3end="<<count<<endl;
             }
         }
         cout<<count<<endl;
