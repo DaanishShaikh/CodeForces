@@ -12,7 +12,7 @@ int main(){
             i64 x=i;
             for(i64 j=i ; j<=n ; j+=x){
                 count++;
-                //cout<<j<<' ';
+                cout<<j<<' ';
                 x*=10;
             }
         }
