@@ -1,1 +1,2 @@
-&& c[i]-minc>=o[i]-mino
+
+        }
