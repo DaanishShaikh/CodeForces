@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-using i64=long long;
+using i64 = long long;
 int main() {
     int tt;
     cin >> tt;
