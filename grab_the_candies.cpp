@@ -7,27 +7,17 @@ void solve(){
     int n;
     cin >> n;
     vector<int>v(n);
+    int esum=0;
+    int osum=0;
     for(int i=0 ; i<n ; i++){
         cin >> v[i];
-    }
-    int mihai=0,bianca=0;
-    sort(v.begin(), v.end(), greater<int>());
-    // for(int i=0 ; i<n ; i++){
-    //     cout<<v[i];
-    // }
-    bool flag=1;
-    for(int i=0 ; i<n ; i++){
-        if(v[i]%2==0){
-            mihai+=v[i];
+        if(v[i]%2){
+            osum+=v[i];
         } else {
-            bianca+=v[i];
-        }
-        if(bianca>=mihai){
-            flag=0;
-            break;
+            esum+=v[i];
         }
     }
-    if(flag){
+    if(esum>osum){
         cout<<"YES"<<endl;
     } else {
         cout<<"NO"<<endl;
