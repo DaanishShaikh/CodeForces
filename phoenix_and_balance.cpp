@@ -15,17 +15,18 @@ void solve(){
     }
     int sum1=0;
     int sum2=0;
+    
     if(v.size()>2){
-    for(int i=0,k=v.size()-1 ; i<k ;i++,k--){
-        if(i%2==0){
-            sum1+=v[i]+v[k];
-        } else {
-            sum2+=v[i]+v[k];
+        for(int i=0,k=v.size()-1 ; i<k ; i++,k--){
+            if(i%2==0){
+                sum1+=v[i]+v[k];
+            } else {
+                sum2+=v[i]+v[k];
+            }
         }
-    }
-    cout<<abs(sum1-sum2)<<endl;
+        cout<<abs(sum1-sum2)<<endl;
     } else {
-        cout<<abs(v[0]-v[1])<<endl;
+        cout<<abs(v[0]-v[1]);
     }
     // for(auto s:v){
     //     cout<<s<<endl;
