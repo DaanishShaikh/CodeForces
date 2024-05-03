@@ -9,30 +9,28 @@ void solve(){
     cin >>n;
     vector<int>v;
     int twos=1;
-    while(n--){
+    int temp=n;
+    while(temp--){
         twos*=2;
     v.push_back(twos);
     }
     int sum1=0;
     int sum2=0;
-    
-    if(v.size()>2){
-        for(int i=0,k=v.size()-1 ; i<k ; i++,k--){
-            if(i%2==0){
-                sum1+=v[i]+v[k];
-            } else {
-                sum2+=v[i]+v[k];
-            }
-        }
-        cout<<abs(sum1-sum2)<<endl;
-    } else {
-        cout<<abs(v[0]-v[1]);
+    sum1+=v.back();
+    v.pop_back();
+    temp=n/2;
+    while(temp--){
+        sum2+=v.back();
+        //cout<<"sum2="<<sum2<<"v.back()="<<v.back()<<endl;
+        v.pop_back();
     }
-    // for(auto s:v){
-    //     cout<<s<<endl;
-    // }
+    while(v.size()){
+        sum1+=v.back();
+        //cout<<"sum1="<<sum1<<"v.back()="<<v.back()<<endl;
+        v.pop_back();
+    }
+    cout<<abs(sum1-sum2)<<endl;
 }
-
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
