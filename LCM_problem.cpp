@@ -3,14 +3,23 @@ using namespace std;
 
 using i64=long long;
 
+int euclidgcd(int a,int b){
+    int c=max(a,b);
+    int d=min(a,b);
+    int ans=0;
+    while(d){
+        c=d;
+        d=c%d; 
+    }
+    return c;
+}
+
 void solve(){
     int n,m;
     cin >> n >> m;
-    for(int x=n ; x<=m ; x++){
-        for(int y=n ; y<=m ; y++){
-            
-        }
-    }
+    
+        cout<<euclidgcd(n,m)<<endl;
+    
 
 
 }
