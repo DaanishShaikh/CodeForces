@@ -26,29 +26,16 @@ void solve(){
     }
     vector<int>zeroes;
     int sum=1;
-    for(int i=0 ; i<s.size() ; i++){
-        if(s[i]=='0'){
-            zeroes.push_back(i);
+    int firstone=0;
+    for(int i=1 ; i<s.size() ; i++){
+        if(s[i]!=s[i-1]){
+            sum++;
         }
     }
-    if(zeroes.size()==1){
-        if(zeroes[0]==0){
-            cout<<1<<endl;
-            return;
-        } else {
-            cout<<2<<endl;
-            return;
-        }
-    }
-    if(zeroes.size()&&zeroes[0]!=0){
-        sum++;
-    }
-    for(int i=1 ; i<zeroes.size() ; i++){
-        if(zeroes[i]!=1+zeroes[i-1]&&(i=zeroes.size()-1)&&zeroes[i]==s.size()-1){
-            sum+=1;
-        }
-        else if(zeroes[i]!=1+zeroes[i-1]){
-            sum+=2;
+    for(int i=1 ; i<s.size() ; i++){
+        if(s[i]=='1'&&s[i-1]=='0'){
+            sum--;
+            break;
         }
     }
     cout<<sum<<endl;
