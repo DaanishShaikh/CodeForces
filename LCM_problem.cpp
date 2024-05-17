@@ -3,22 +3,28 @@ using namespace std;
 
 using i64=long long;
 
-int euclidgcd(int a,int b){
-    int c=max(a,b);
-    int d=min(a,b);
-    int ans=0;
-    while(d){
-        c=d;
-        d=c%d; 
-    }
-    return c;
-}
+// int euclidgcd(int a,int b){
+//     int c=max(a,b);
+//     int d=min(a,b);
+//     int ans=0;
+//     while(d){
+//         c=d;
+//         d=c%d; 
+//     }
+//     return c;
+// }
 
 void solve(){
     int n,m;
     cin >> n >> m;
     
-        cout<<euclidgcd(n,m)<<endl;
+    if(2*n>m){
+        cout<<-1<<' '<<-1<<endl;
+        return;
+    } else {
+        cout<<n<<' '<<2*n<<endl;
+        return;
+    }
     
 
 
