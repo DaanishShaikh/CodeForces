@@ -9,15 +9,19 @@ void solve(){
     cin >> s;
     int count=0;
     for(int i=0 ; i<s.size() ; i++){
+        if(count>=3){
+            cout<<"NO"<<endl;
+            return;
+        }
         if(s[i]=='4'){
             count++;
         } else {
-            count=0;
             if(count>=3){
                 count=0;
                 cout<<"NO"<<endl;
                 return;
             }
+            count=0;
         }
         if(s[i]!='4'&&s[i]!='1'){
             cout<<"NO"<<endl;
@@ -27,6 +31,10 @@ void solve(){
             cout<<"NO"<<endl;
             return;
         }
+    }
+    if(s[0]=='4'){
+        cout<<"NO"<<endl;
+        return;
     }
     cout<<"YES"<<endl;
 }
