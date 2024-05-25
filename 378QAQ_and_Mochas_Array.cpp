@@ -25,6 +25,14 @@ void solve(){
     auto it=st.begin();
     int first=*(it);
     int second=*(++it);
+    if(first==2 &&second%2==0){
+        for(auto c:st){
+            if(c%2==1){
+                second=c;
+                break;
+            }
+        }
+    }
     //cout<<first<<second<<endl;
     for(int i=0 ; i<n; i++){
         if(v[i]%first && v[i]%second){

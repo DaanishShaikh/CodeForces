@@ -2,42 +2,41 @@
 using namespace std;
 
 using i64=long long;
-
+bool is_sorted(vector<int>v){
+    for(int i=1 ; i<v.size() ; i++){
+        if(v[i-1]>v[i]){
+            return 0;
+        }
+    }
+    return 1;
+}
 void solve(){
     
     int n;
     cin >> n;
     vector<int>v(n);
-    set<int>st;
-    bool one=0;
-    bool two=0;
     for(int i=0 ; i<n ; i++){
         cin >> v[i];
-        if(v[i]==1){
-            one=1;
-        }
-        st.insert(v[i]);
     }
-    if(one){
+    if(is_sorted(v)){
         cout<<"Yes"<<endl;
         return;
     }
-    auto it=st.begin();
-    int first=*(it);
-    int second=*(++it);
-    //cout<<first<<second<<endl;
-    for(int i=0 ; i<n; i++){
-        if(v[i]%first && v[i]%second){
-            cout<<"No"<<endl;
+    while(n--){
+        v.insert(v.begin(), v[v.size()-1]);
+        v.pop_back();
+        if(is_sorted(v)){
+            cout<<"Yes"<<endl;
             return;
         }
     }
-    cout<<"Yes"<<endl;
+    cout<<"No"<<endl;
 }
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+
     int tt;
     cin >> tt;
 
