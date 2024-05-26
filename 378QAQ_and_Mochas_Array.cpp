@@ -6,41 +6,42 @@ using i64=long long;
 void solve(){
     
     int n;
-    cin >> n;
-    vector<int>v(n);
-    set<int>st;
-    bool one=0;
-    bool two=0;
-    for(int i=0 ; i<n ; i++){
-        cin >> v[i];
-        if(v[i]==1){
-            one=1;
+        cin>>n;
+        int N=1e5+10;
+        int a[N];
+        int fl=0;
+        for(int i=1;i<=n;i++){
+            cin>>a[i];
+            if(a[i]==1)fl=1;
         }
-        st.insert(v[i]);
-    }
-    if(one){
-        cout<<"Yes"<<endl;
-        return;
-    }
-    auto it=st.begin();
-    int first=*(it);
-    int second=*(++it);
-    if(first==2 &&second%2==0){
-        for(auto c:st){
-            if(c%2==1){
-                second=c;
-                break;
+        if(fl){
+            cout<<"Yes\n";
+            return;
+        }    
+        else{
+            sort(a+1,a+1+n);
+            vector<int> b;
+            for(int i=2;i<=n;i++){
+                if(a[i]%a[1])b.push_back(a[i]);
+            }
+            sort(b.begin(),b.end());
+            n = b.size();
+            for(int j=1;j<n;j++){
+                if(b[j]%b[0]){
+                    fl=1;
+                    break;
+                }
+            }
+            if(!fl){
+                cout<<"Yes\n";
+                return;
+                }
+            else 
+            {
+                cout<<"No\n";
+                return;
             }
         }
-    }
-    //cout<<first<<second<<endl;
-    for(int i=0 ; i<n; i++){
-        if(v[i]%first && v[i]%second){
-            cout<<"No"<<endl;
-            return;
-        }
-    }
-    cout<<"Yes"<<endl;
 }
 
 int main(){
