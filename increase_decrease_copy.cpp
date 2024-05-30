@@ -1,4 +1,3 @@
-// time complexity= Nloglog(N) + (q*log base 2 (N))
 #include<bits/stdc++.h>
 using namespace std;
 
