@@ -9,19 +9,19 @@ void solve(){
     cin>>n>>k;
     vector<int>ans;
     int i=1;
-    for( ; i<=2*k ; i++){
+    for( ; i<=k+1 ; i++){
         ans.push_back(i);
     }
     vector<int>v;
-    for(int i=(2*k)+1 ; i<=n; i++){
+    for(int i=(k)+2 ; i<=n; i++){
         v.push_back(i);
     }
     sort(v.begin(),v.end(),greater<int>());
-    for(int i=0 ; i<v.size() ; i++){
-        ans.push_back(v[i]);
-    }
     for(int i=0 ; i<ans.size() ; i++){
-        cout<<ans[i]<<' ';
+        v.push_back(ans[i]);
+    }
+    for(int i=0 ; i<v.size() ; i++){
+        cout<<v[i]<<' ';
     }
     cout<<endl;
 }
