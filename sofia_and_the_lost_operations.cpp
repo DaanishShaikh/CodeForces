@@ -32,13 +32,13 @@ void solve(){
         cout << "NO" << endl;
         return;
     }
-    unordered_map<int,int>f;
+    map<int,int>f;
     for(int i=0 ; i<n ; i++){
         if(a[i]!=b[i]){
             f[b[i]]++;
         }
     }
-    unordered_map<int,int>s;
+    map<int,int>s;
     for(auto c:f){
         s[c.first]=0;
         //cout<<"c.first="<<c.first<<endl;
