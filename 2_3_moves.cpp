@@ -7,11 +7,15 @@ void solve(){
     
     int n;
     cin >> n;
-    if(n==2||n==1||n==3){
+    if(n==2||n==3){
         cout<<1<<'\n';
         return;
     }
-    cout<<ceil((n+2)/3)<<'\n';
+    if(n==1){
+        cout<<2<<'\n';
+        return;
+    }
+    cout<<(n+2)/3<<'\n';
 }
 
 int main(){
