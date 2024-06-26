@@ -4,21 +4,18 @@ using namespace std;
 using i64=long long;
 
 void solve(){
-
-    int n,m;
-    cin >> n >> m;
-    string s;
-    cin >> s;
-    vector<int>v(m);
-    for(int i=0 ; i<m ; i++){
-        cin >> v[i];
+    
+    int a,b,c,d;
+    cin >> a >> b >> c >> d;
+    if((a>b)&&(d>c) || (a<b)&&(d<c)){
+        cout<<"NO"<<'\n';
+        return;
     }
-    string t;
-    cin >> t;
-    for(int i=0 ; i<m ; i++){
-        if(v[i])
+    if(a==c&&b==d){
+        cout<<"YES"<<'\n';
+        return;
     }
-
+    cout<<"YES"<<'\n';
 }
 
 int main(){
