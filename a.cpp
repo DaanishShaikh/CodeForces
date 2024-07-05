@@ -5,19 +5,28 @@ using i64=long long;
 
 void solve(){
 
-    int n,m;
-    cin >> n >> m;
-    string s;
-    cin >> s;
-    vector<int>v(m);
-    for(int i=0 ; i<m ; i++){
-        cin >> v[i];
-    }
-    string t;
-    cin >> t;
-    for(int i=0 ; i<m ; i++){
-        if(v[i])
-    }
+    int n, m;
+        cin >> n >> m;
+        string s;
+        cin >> s;
+
+        set<int> indices;
+        for (int i = 0; i < m; ++i) {
+            int x;
+            cin >> x;
+            indices.insert(--x);
+        }
+
+        string c;
+        cin >> c;
+        sort(c.begin(), c.end());
+
+        int ptr = 0;
+        for (auto idx : indices) {
+            s[idx] = c[ptr++];
+        }
+
+        cout << s << '\n';
 
 }
 
