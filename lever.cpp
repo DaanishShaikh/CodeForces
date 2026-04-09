@@ -10,38 +10,22 @@ using u32 = unsigned;
 void solve() {
    int n;
    cin >> n;
-   int index;
-   int c;
-   vector<int>v;
+   vector<int>a(n);
    for(int i=0 ; i<n ; i++){
-    cin >> c;
-    v.push_back(c);
-    if(c==n){
-      index=i;
+    cin >> a[i];
+   }
+   vector<int>b(n);
+   for(int i=0 ; i<n ; i++){
+    cin >> b[i];
+   }  
+   int answer=0;
+   for(int i= 0 ; i<n ; i++){
+    if(a[i]>b[i]){
+        answer+=a[i]-b[i];
     }
    }
-   if(n==1 &&v[0]==1){
-    cout<<"YES"<<"\n";
-   }
-   if(index<n-1){
-   if((v[index-1]==n-1)||v[index+1]==n-1){
-    cout<<"YES"<<'\n';
-    return;
-   } else {
-    cout<<"NO"<<"\n";
-    return;
-   }
-  } else{
-    if(v[index-1]==n-1){
-      cout<<"YES"<<"\n";
-      return;
-    }else{
-      cout<<"NO"<<"\n";
-      return;
-    }
+   cout<<answer+1<<'\n';
   }
-
-}
  
 int main() {
     std::ios::sync_with_stdio(false);
