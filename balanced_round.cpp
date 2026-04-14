@@ -1,40 +1,37 @@
-#include<iostream>
-#include<vector>
-#include<cmath>
+#include <bits/stdc++.h>
 using namespace std;
-int main (){
-    int t;
-    cin>>t;
-    for(int i=0; i<t;i++ ){
-        int l;
-        cin>>l;
-        int k;
-        cin>>k;
-        vector<int>a(l);
-        for(int j=0 ; j<l ; j++){
-            cin>>a[j];
-        }
-        for(long long i=0 ; i<l ; i++){
-            for(long long k=0 ; k<l-1 ; k++){
-                // if(k==l){
-                //     break;
-                // }
-                if(a[k]>a[k+1]){
-                    swap(a[k],a[k+1]);
-                }
-            }
-        }
-        for(long long o=0 ; o<l ; o++){
-            cout<<a[o]<<" ";
-        }
-        cout<<endl;
-        int count=0;
-        for(int p=0 ; p<l ; p++){
-            if(abs(a[p]-a[p+1])>=k){
-                count++;
-            }
-        }
-        cout<<count<<endl;
+using i64 = long long;
+
+void solve() {
+    int n,k;
+    cin >> n >> k;
+    vector<int> a(n);
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
     }
+    int count = 1,maxcount = 1;
+    sort(a.begin(), a.end());
+    for(int i = 1; i < n; i++) {
+        if((a[i]-a[i-1])<=k) {
+            count++;
+            maxcount = max(maxcount, count);
+        } else {
+            count = 1;
+        }
+    }
+    cout<<n-maxcount<<'\n';
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+
+    while (t--) {
+        solve();
+    }
+
     return 0;
 }
