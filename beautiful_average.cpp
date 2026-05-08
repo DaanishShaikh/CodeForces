@@ -8,19 +8,15 @@ using u32 = unsigned;
 // using i128 = __int128;
  
 void solve() {
-   int n,s,m;
-    cin >> n >> s >> m;
-    int first=0;
-    int ans=0,sum=0;
-    for(int i=0;i<2*n;i++){
-        int a;
-        cin >> a;
-        ans=max(ans,a-first);
-        first=a;
+   int n;
+   cin >> n;
+    vector<int> a(n);
+    int maxnum=0;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+        maxnum = max(maxnum, a[i]);
     }
-    ans=max(ans,m-first);
-    if(ans>=s) cout << "YES\n";
-    else cout << "NO\n";
+    cout<< maxnum << "\n";
 }
  
 int main() {

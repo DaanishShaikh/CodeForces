@@ -15,7 +15,9 @@ void solve() {
     for(int i=0;i<2*n;i++){
         int a;
         cin >> a;
-        ans=max(ans,a-first);
+        if(i%2==0){
+          ans=max(ans,a-first);
+        }
         first=a;
     }
     ans=max(ans,m-first);
